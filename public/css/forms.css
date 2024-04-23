@@ -1,0 +1,725 @@
+
+.modal-backdrop.show {
+    background: rgba(0, 0, 0, 0.40);
+/* backdrop-filter: blur(5px) !important; */
+}
+
+.modal-form {
+  width: 100%;
+  padding-bottom: 4.74vw;
+  aspect-ratio: 7/6;   
+  flex-direction: column;
+  justify-content: center;   
+  border-radius: 30px;       
+  background: url(../img/icons/modal-bg-1-close-reg.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;  
+  background-position-x: center;    
+  z-index: 0; 
+  border: 0 !important;
+  box-shadow: 0px 0px 10px 6px #ffffffa9;
+}
+
+.modal-form_enter {
+    height: fit-content;
+    padding-bottom: 10%;
+    background: url(../img/icons/modal-bg-enter.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position-y: center;  
+    background-position-x: center;    
+    z-index: 0; 
+    border: 0 !important;
+    box-shadow: 0px 0px 10px 6px #ffffffa9; 
+}
+
+.modal__content {
+    position: relative;
+    display: flex;
+}
+
+.br-mob {
+    display: none;
+}
+.wewe {
+    background: #ccc;
+    width: 96%;
+    height: 500px;
+    padding-top: 96%;
+    margin: 2%;
+    border: solid;
+    border-image-source: url(/img/icons/pdf-icon.png);
+    border-image-slice: 34%;
+    border-image-width: auto;
+    border-image-outset: 36px 30px 58px 28px;
+}
+
+ .new-user-form{
+  height: 100%;    
+  /* aspect-ratio: 7/6;   */
+  background: url(../img/icons/registration-bg.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);          
+}
+
+.new-user-form .reg__group {
+    margin-bottom: 50px;
+}
+
+.modal {
+    --bs-modal-width: 700px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    /* padding: 0; */
+}
+
+.modal-header{
+    justify-content: flex-end;
+    border: none;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.modal_close {  
+    padding: 0%; 
+    background: none;    
+    border: none;    
+}
+
+
+.logo__modal--container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 38px;
+    max-width: 184px;
+}
+
+.logo__modal--img {
+    max-width: 184px;
+}
+
+.buttons__group {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.buttons__group .form__submit {
+    height: 50px;
+    width: 100%;
+}
+
+
+.buttons__group .form__submit:first-child {
+    margin-bottom: 20px;
+}
+
+.enter__group {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registry__submit {
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #8B89BD; 
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;    
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: 'Arsenal';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;    
+    border: none;
+}
+
+.registry__submit::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));
+}
+
+.registry__submit_disabled::after {
+    background: none;
+}
+
+.modal__disabled-text {
+    display: flex;
+    margin-bottom: 0;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__disabled-text span {
+    font-family: 'Arsenal';
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.modal__reg-closed-text {
+    color: #fff;
+}
+
+.modal__new-program-text {
+    color: #FFED36;;
+}
+
+
+
+
+
+.modal-form_enter .registry__submit {
+    width: 65%;
+}
+
+.registry__submit--top {
+    margin-top: 25px;
+}
+
+.registry__input--field {
+    order: 2;      
+    box-sizing: border-box;
+    width: 80%;
+    height: 50px;    
+    border-radius: 50px;
+    padding-left: 16px; 
+    margin-bottom: 10px;       
+    background: rgba(255, 255, 255, 0.27);    
+    outline: none;
+    border: none;
+    color: #463E57;
+    font-family: 'Arsenal';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.new-user-form .registry__submit {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 5px;
+    width: 300px;
+    height: 60px;    
+    margin-top: 65px;
+}
+
+.form__submit {    
+    position: relative;
+    height: 56px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    border: none;
+    color: #FFF;
+    font-family: 'Arsenal';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%);    
+}
+
+.form__submit::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27)); 
+}
+
+
+.code__input--wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60px;    
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.50);  
+    z-index: 1;
+}
+
+.code__input--wrap:hover {
+    box-shadow: 0px 0px 20px 8px #FFF;
+}
+
+.code__submit {    
+    position: relative;
+    height: 56px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    border: none;
+    color: #FFF;
+    font-family: 'Arsenal';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%);    
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;  
+}
+
+.code__submit::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27)); 
+}
+
+.code__submit:hover {
+    box-shadow: 0px 0px 15px 5px #FFF;
+    transition: box-shadow 0.3s ease;  
+}
+
+.code__submit_disabled {
+    background: #B1B0D3 !important;
+}
+
+.code__submit_disabled:hover {
+    box-shadow: none;
+    transition:none;
+}
+
+.reg__group {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reg__group .file-upload__label {
+    order: 2;
+    text-align: center;
+}
+
+
+.reg__group .file-upload__label::before {
+    display: flex;
+    justify-content: center;
+    content: 'ЗАГРУЗИТЬ ЧЕК';
+    color: #FFF;
+    order: 2;    
+    /* width: 100%;
+    height: 100%;     */
+    /* z-index: 111; */
+}
+
+.reg__group .file-upload__label::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.reg__group .file-upload__label::after {
+    content: '';
+    position: absolute;    
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));     
+    z-index: -1;
+}
+
+.file-type-error {
+    padding-left: 8%;
+}
+
+.reg-label { 
+padding-left: 20px;   
+padding-bottom: 3px;
+color: #FFF;
+font-family: 'Arsenal';
+font-size: 13px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.reg-label--post--layout {
+    white-space: nowrap;    
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 0;
+}
+
+
+
+
+.form-check {
+    width: 100%;
+        color: #FFF;
+        font-family: 'Arsenal';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+.form-check-input {
+    cursor: pointer;
+    position: relative;
+}
+.form-check-input::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));
+    z-index: -1;
+}
+
+.form-check-input.invalid-conditions::after {
+    background: none;
+}
+
+.form-check-label {
+    width: 100%;
+    font-weight: 200;
+}
+
+.form-check-label a {
+color: #FFF;
+font-family: 'Arsenal';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.input__group {
+    position: relative;
+    width: 100%;  
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
+}
+
+.input__group .reg-label {
+    order: 1;
+    width: 80%;    
+}
+
+.file-upload__group .reg-label {
+    width: 100%;
+    order: 1;
+}
+
+.file-upload__group .invalid-feedback {
+    order: 1;
+}
+
+.invalid-feedback--check {
+    order: 2;
+}
+
+.was-validated .form-control {
+    order: 2;
+}
+
+.was-validated .form-control:invalid + .reg-label {
+    display: none;    
+}
+
+.file-upload__group .was-validated .form-control:invalid + .reg-label {    
+    display: none;    
+}
+
+.was-validated .form-control:valid {
+    margin-bottom: 7px;
+}
+
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+    box-sizing:border-box;
+    border: 1px solid red;
+    /* background-image: url(./img/icons/red-star.svg); */
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.was-validated .form-check-input:invalid {
+    border: 1.5px solid #F00;    
+}
+
+/* .was-validated .form-check-input:invalid .form-check-input::after {
+    background: none;
+} */
+
+.invalid-feedback {
+    
+    position: absolute;
+    top: 18px;      
+    
+    font-family: 'Arsenal';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center; 
+
+    color: #FFC0C0;
+
+    order: 3;    
+}
+
+.invalid-feedback_active {
+    display: block;
+}
+
+ .uploadInputForm {
+    order: 1;
+ }
+
+
+
+
+@media (max-width: 992px) {
+    .modal-form {
+        width: 307px;
+        height: 465px;
+        margin-left: auto;
+        margin-right: auto;      
+        flex-direction: column;
+        justify-content: center;   
+        border-radius: 30px;       
+        background: url(../img/icons/modal-bg-1-mobile.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: center;  
+        background-position-x: center;    
+        z-index: 0; 
+        border: 0 !important;
+        box-shadow: 0px 0px 10px 6px #ffffffa9; 
+    }
+      
+    .modal-body {
+        padding-bottom: 0;
+
+        flex: none;
+    }
+
+    .modal-form_enter {        
+        height: 574px;
+        background: url(../img/icons/modal-bg-enter-mobile.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
+    }
+
+    .new-user-form{
+        height: 1157px;    
+        min-width: 307px;
+        background: url(../img/icons/new-user-bg.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);          
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 10px;
+      }
+      
+      .modal-body__registration_mobile {
+        margin-top: 83px;
+      }
+
+      .logo__modal--img {
+        max-width: 129px;
+      }
+
+      .reg__group {
+        width: 100%;
+      }
+
+      .reg-label {
+        /* white-space: nowrap; */
+        font-size: 10px;
+        padding-left: 0px;
+      }
+
+      .reg-label {
+        width: 85%;
+        font-size: 10px;
+        white-space: wrap;
+      }
+
+      .reg-label--code {
+        width: 100%;
+
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .form-check-label {
+        font-size: 10px;
+      }
+      .reg-label--post--layout {
+        width: 90%;
+        white-space: normal;         
+        font-size: 11px;
+    }
+
+
+      .registry__submit {
+        height: 50px;
+        font-size: 16px;
+      }
+
+      .registry__submit--top {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .modal-form_enter .logo__modal--container {
+        margin-bottom: 20px;
+      }
+
+      .modal_close {
+        position: absolute;
+        top: 46px;
+        right: 46px;
+      }
+
+      .modal-form_enter .registry__submit {
+        width: 85%;
+    }
+
+    .new-user-form .registry__submit {
+        height: 50px;
+        width: 90%;  
+    }
+
+    .form-check {
+        width: 90%;
+    }
+
+    .file-upload__in {
+        width: 85%;
+    }
+
+    .form-check-label a {
+        font-size: 10px;
+    }
+
+    .input__group .reg-label {
+        width: 90%;
+    }
+
+    .logo__modal--container {
+        margin-bottom: 17px;
+    }
+
+    .buttons__group {
+        width: 75%;
+    }
+
+    .modal__disabled-text span {
+        font-size: 13px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .file-upload__group .file-upload__label{
+        width: 90%;
+    }
+
+    .reg-label--check {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+ 
+    .br-mob {
+        display: block;
+    } 
+
+    .pagination-numbers {
+        display: inline;
+        height: 35px;
+        overflow: hidden;
+    }
+
+    .file-upload__group .file-upload__label--width {
+        width: 88%;
+    }
+
+    .registry__input--field {
+        width: 90%;
+    }
+
+}
+
+.registry__submit:hover {
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;  
+}
+
+.registry__submit:hover {
+    box-shadow: 0px 0px 20px 8px #FFF;
+    transition: box-shadow 0.3s ease;  
+}
+
+.registry__submit_disabled:hover {
+    box-shadow: none;
+    transition: none;
+}
+
+.modal_close {
+    filter: none;
+    -webkit-filter: none;
+    transition: filter 0.3s ease; 
+}
+
+.modal_close:hover {
+    filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.7));
+    -webkit-filter: drop-shadow(1px 1px 3px rgb(255, 255, 255));
+    transition: filter 0.3s ease; 
+}
+
