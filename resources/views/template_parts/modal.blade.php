@@ -18,20 +18,9 @@
                             data-bs-toggle="modal">ВХОД
                     </button>
                     <button class="registry__submit registry__submit_disabled" type="submit" data-bs-target="#registryForm"
-                            data-bs-toggle="modal">РЕГИСТРАЦИЯ
+                            data-bs-toggle="modal">РЕГИСТРАЦИЯ 
                     </button>
                 </div>
-            </div>
-
-            <div class="modal__wr-text-disabled">
-                <p class="modal__reg-closed-text modal__disabled-text">
-                    <span>Регистрация в акции временно закрыта,</span>
-                    <span>но выдача подарков продолжается.</span>
-                </p>
-                <p class="modal__new-program-text modal__disabled-text">
-                    <span>В скором времени Вас ждет интересная</span>
-                    <span>бонусная программа и новые подарки.</span>
-                </p>
             </div>
 
         </div>
@@ -77,7 +66,7 @@
             </div>
         </div>
 
-    </div>
+    </div> 
 </div>
 
 
@@ -90,7 +79,7 @@
                 <button type="button" class="modal_close" data-bs-dismiss="modal" aria-label="Close"><img
                         src="img/icons/modal-close.svg" alt="clofe-form"></button>
             </div>
-            <div class="modal-body modal-body__registration_mobile">
+            <div class="modal-body modal-body__registration_desc modal-body__registration_mobile">
                 <div class="logo__modal--container">
                     <img class="logo__modal--img" src="img/icons/logo-modal.svg" alt="Logo">
                 </div>
@@ -141,30 +130,64 @@
                         электронную почту придет<br class="br-mob"> подтверждение выигрыша!
                     </label>
 
-                    <div class="input__group">
+                    <ul class="registry-form__list">
+                        <li class="registry-form__item">
+                            <div class="registry-form__wr-address">
+                                <label for="registry-form__address-area">область</label>
+                                <div class="registry-form__address-wr-input">
+                                    <input type="text" name="registry-form__address-district" id="registry-form__address-area">
+                                </div>
+                            </div>
+                            <div class="registry-form__wr-address">
+                                <label for="registry-form__address-district">район</label>
+                                <div class="registry-form__address-wr-input">
+                                    <input type="text" name="registry-form__address-district" id="registry-form__address-district">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="registry-form__item">
+                            <div class="registry-form__wr-address">
+                                <label for="registry-form__address-city">город</label>
+                                <div class="registry-form__address-wr-input">
+                                    <input type="text" name="registry-form__address-city" id="registry-form__address-city">
+                                </div>
+                            </div>
+                            <div class="registry-form__wr-address">
+                                <label for="registry-form__address-street">улица</label>
+                                <div class="registry-form__address-wr-input">
+                                    <input type="text" name="registry-form__address-street" id="registry-form__address-street">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="registry-form__item">
+                            <div class="registry-form__wr-address">
+                                <label for="registry-form__address-house">дом</label>
+                                <div class="registry-form__address-wr-input">
+                                    <input type="text" name="registry-form__address-house" id="registry-form__address-house">
+                                </div>
+                            </div>
+                            <div class="registry-form__wr-address">
+                                <label for="">квартира</label>
+                                <div class="registry-form__address-wr-input">
+                                    <input type="text" name="registry-form__address-apartment" id="registry-form__address-apartment">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
 
-                        <input class="registry__input--field form-control" type="text" name="code" id="codeauth"
-                               required>
-                        <label for="promoCode" class="reg-label reg-label--promo">Добавьте пожалуйста код, который
-                            находится на
-                            вкладыше внутри пачки</label>
-                        <div class="invalid-feedback invalid-feedback--code">
-                            Извините, но без кода вы не можете принять участие в акции
+                    <div class="file-upload__group file-upload__registry input__group" required>
+
+                        <p class="reg-label reg-label--check file-upload__title">
+                            Загрузите, пожалуйста, чек (внимание, чек должен быть читабельным)
+                        </p>
+
+                        <div class="file-upload__back">
+                            <label class="file-upload__label" for="checkLoadLabel">
+                                загрузить чек
+                                <input class="file__upload--input form-control" id="checkLoadLabel" type="file" name="check" aria-label="file example" required>
+                            </label>
                         </div>
-                    </div>
-
-                    <div class="file-upload__group input__group" required>
-
-                        <label class="reg-label reg-label--check">Загрузите, пожалуйста, чек (внимание, чек должен быть
-                            читабельным)</label>
-
-                        <label class="file-upload__label" for="checkLoadLabel">
-
-                            <input class="file__upload--input form-control" id="checkLoadLabel" type="file" name="check"
-                                   aria-label="file example" required>
-
-                        </label>
-
+                    
                         <div class="invalid-feedback invalid-feedback--check" id="file-info">Извините, но без чека вы не
                             можете принять<br class="br-mob"> участие в акции
                         </div>

@@ -12,8 +12,8 @@
   justify-content: center;   
   border-radius: 30px;       
   background: url(../img/icons/modal-bg-1-close-reg.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 125%;
   background-position-y: center;  
   background-position-x: center;    
   z-index: 0; 
@@ -55,10 +55,13 @@
     border-image-outset: 36px 30px 58px 28px;
 }
 
- .new-user-form{
-  height: 100%;    
-  /* aspect-ratio: 7/6;   */
-  background: url(../img/icons/registration-bg.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);          
+.new-user-form{
+    height: 100%; 
+    padding-bottom: 0;   
+
+    background: no-repeat url(../img/icons/registration-bg.png), no-repeat linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
+    background-size: 124.5%;          
+    background-position: center;
 }
 
 .new-user-form .reg__group {
@@ -74,6 +77,10 @@
     flex-direction: column;
     margin-top: 30px;
     /* padding: 0; */
+}
+
+.modal-body__registration_desc {
+    padding-bottom: 2.2vw;
 }
 
 .modal-header{
@@ -130,24 +137,27 @@
 
 .registry__submit {
     position: relative;
-    text-align: center;
-    border-radius: 50px;
-    background-color: #8B89BD; 
-    color: white;
-    cursor: pointer;
+    
     width: 100%;
     height: 60px;    
     padding-left: 24px;
     padding-right: 24px;
     margin-bottom: 20px;
-    color: #FFF;
+
     font-family: 'Arsenal';
-    font-size: 28px;
+    font-size: 1.46vw;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
-    text-transform: uppercase;    
+    text-transform: uppercase;  
+    text-align: center;
+
+    border-radius: 2.60vw;
+    background-color: #7A78B1; 
+    color: #fff;
     border: none;
+
+    cursor: pointer; 
 }
 
 .registry__submit::after {
@@ -159,34 +169,7 @@
     bottom: -2px;
     left: -2px;
     border-radius: 50px;
-    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));
-}
-
-.registry__submit_disabled::after {
-    background: none;
-}
-
-.modal__disabled-text {
-    display: flex;
-    margin-bottom: 0;
-
-    flex-direction: column;
-    align-items: center;
-}
-
-.modal__disabled-text span {
-    font-family: 'Arsenal';
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.modal__reg-closed-text {
-    color: #fff;
-}
-
-.modal__new-program-text {
-    color: #FFED36;;
+    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%);
 }
 
 
@@ -329,38 +312,43 @@
     margin-right: auto;
 }
 
-.reg__group .file-upload__label {
-    order: 2;
-    text-align: center;
+.file-upload__back {
+    display: flex;
+    width: 15.63vw;
+    height: 3.13vw;
+    padding: 0.10vw;
+
+    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%);
+    border-radius: 2.60vw;
+    transition: box-shadow 0.3s ease;
 }
 
+.file-upload__back:hover {
+    box-shadow: 0px 0px 20px 8px #FFF;
+}
 
-.reg__group .file-upload__label::before {
+.reg__group .file-upload__label {
     display: flex;
-    justify-content: center;
-    content: 'ЗАГРУЗИТЬ ЧЕК';
+    width: 100%;
+
+    font-family: 'Arsenal';
+    font-size: 1.46vw;
+    font-style: normal;
+    font-weight: 200;
+    text-transform: uppercase;
+
     color: #FFF;
-    order: 2;    
-    /* width: 100%;
-    height: 100%;     */
-    /* z-index: 111; */
+    border-radius: 2.60vw;
+    background: #7A78B1;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
 }
 
 .reg__group .file-upload__label::-webkit-file-upload-button {
     visibility: hidden;
-}
-
-.reg__group .file-upload__label::after {
-    content: '';
-    position: absolute;    
-    top: -2px;
-    right: -2px;
-    bottom: -2px;
-    left: -2px;
-    border-radius: 50px;
-    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));     
-    z-index: -1;
 }
 
 .file-type-error {
@@ -380,24 +368,80 @@ text-transform: uppercase;
 }
 
 .reg-label--post--layout {
+    padding-left: 0;
+    padding-bottom: 0;
+
     white-space: nowrap;    
-    margin-bottom: 30px;
     font-size: 12px;
     font-weight: 700;
-    padding-left: 0;
 }
+
+
+/* START ФОРМА РЕГИСТРАЦИИ БЛОК С АДРЕСОМ */
+
+.registry-form__list {
+    display: flex;
+    width: 80%;
+    margin-top: 0.75vw;
+    margin-bottom: 0;
+    padding: 0;
+    gap: 0.1vw;
+
+    flex-direction: column;
+}
+
+.registry-form__item {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.registry-form__wr-address {
+    width: 47.5%;
+}
+
+.registry-form__wr-address label { 
+    padding-left: 1.04vw;
+
+    font-family: 'Arsenal';
+    font-size: 0.68vw;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    color: #FFF;
+}
+
+.registry-form__address-wr-input {
+    height: 2.60vw;
+}
+
+.registry-form__address-wr-input input {
+    height: 100%;
+    width: 100%;
+
+    border: 0;
+    outline: 0;
+    background: #807FB5;
+    border-radius: 1.56vw;
+}
+
+/* END ФОРМА РЕГИСТРАЦИИ БЛОК С АДРЕСОМ */
 
 
 
 
 .form-check {
     width: 100%;
-        color: #FFF;
-        font-family: 'Arsenal';
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    margin-top: 1vw;
+
+    font-family: 'Arsenal';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    color: #FFF;
 }
 
 .form-check-input {
@@ -447,14 +491,20 @@ border-bottom: 1px solid rgba(255, 255, 255, 1);
     align-items:center
 }
 
+.file-upload__registry {
+    margin-top: 1.6vw;
+}
+
 .input__group .reg-label {
-    order: 1;
     width: 80%;    
 }
 
-.file-upload__group .reg-label {
-    width: 100%;
-    order: 1;
+.file-upload__title {
+    width: 100% !important;
+    padding-left: 0;
+    margin-bottom: 0.2vw;
+
+    text-align: center;
 }
 
 .file-upload__group .invalid-feedback {
@@ -520,12 +570,163 @@ border-bottom: 1px solid rgba(255, 255, 255, 1);
     display: block;
 }
 
- .uploadInputForm {
-    order: 1;
- }
+.uploadInputForm {
+order: 1;
+}
 
+/* START ИНФОРМАЦИОННЫЙ ПОП-АП В ЛИЧНОМ КАБИНЕТЕ */
 
+.api-res__wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
+    display: none;
+
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.api-res__wrapper_active {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.api-res__window {
+    position: relative;
+
+    width: 36.46vw;
+    height: 31.25vw;
+
+    border-radius: 1.56vw;
+    background: no-repeat url('../img/leafs-pop-up-info-acc.webp') , no-repeat linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
+    background-size: 123%;
+    background-position: center;
+    box-shadow: 0px 0px 1.04vw 0.42vw #FFF;
+}
+
+.api-res__content-icon {
+    width: 6.77vw;
+    height: 6.77vw;
+    margin: 9.17vw auto 0;
+}
+
+.api-res__lottery .api-res__content-icon {
+    background: no-repeat url('../img/icons/api-res__content-icon-box.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.api-res__no-enough .api-res__content-icon, .api-res__fail-send .api-res__content-icon {
+    background: no-repeat url('../img/icons/api-res__content-icon-warning.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.api-res__success .api-res__content-icon {
+    background: no-repeat url('../img/icons/api-res__content-icon-success.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.api-res__content-wr-text {
+    width: 100%;
+    margin-top: 1.46vw;
+}
+
+.api-res__content-text {
+    display: none;
+    margin: 0 auto;
+    padding-bottom: 0;
+
+    font-family: "Blogger Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+
+    color: #fff;
+}
+
+.api-res__lottery .api-res__content-text_lottery {
+    display: block;
+}
+
+.api-res__no-enough .api-res__content-text_no-enough {
+    display: block;
+    width: 50%;
+}
+
+.api-res__success .api-res__content-text_success {
+    display: block;
+    width: 70%;
+}
+
+.api-res__fail-send .api-res__content-text_fail-send {
+    display: block;
+    width: 60%;
+}
+
+.api-res__content-wr-button {
+    display: none;
+    margin-top: 2.08vw;
+}
+
+.api-res__lottery .api-res__content-wr-button {
+    display: block;
+}
+
+.api-res__content-button-back {
+    display: flex;
+    width: 15.63vw;
+    height: 3.13vw;
+    margin: 0 auto;
+    padding: 0.1vw;
+
+    border-radius: 2.60vw;
+    background: no-repeat linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%);
+    transition: box-shadow 0.3s ease; 
+}
+
+.api-res__content-button-back:hover {
+    box-shadow: 0px 0px 20px 8px #FFF;
+}
+
+.api-res__content-button-back a {
+    display: flex;
+    width: 100%;
+
+    font-family: 'Arsenal';
+    font-size: 1.46vw;
+    font-style: normal; 
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #7A78B1;
+    border-radius: 2.60vw;
+    color: #fff;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.api-res__close {
+    position: absolute;
+    top: 4.2%;
+    right: 4.2%;
+
+    width: 1.56vw;
+    height: 1.56vw;
+
+    cursor: pointer;
+}
+
+/* END ИНФОРМАЦИОННЫЙ ПОП-АП В ЛИЧНОМ КАБИНЕТЕ */
 
 @media (max-width: 992px) {
     .modal-form {
@@ -610,7 +811,9 @@ border-bottom: 1px solid rgba(255, 255, 255, 1);
 
       .registry__submit {
         height: 50px;
-        font-size: 16px;
+        font-size: 4.27vw;
+
+        border-radius: 13.33vw;
       }
 
       .registry__submit--top {
@@ -639,6 +842,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 1);
 
     .form-check {
         width: 90%;
+        margin-top: 3.8vw;
     }
 
     .file-upload__in {
@@ -668,7 +872,12 @@ border-bottom: 1px solid rgba(255, 255, 255, 1);
     }
 
     .file-upload__group .file-upload__label{
-        width: 90%;
+        width: 100%;
+        height: auto;
+
+        font-size: 4.27vw;
+
+        border-radius: 13.33vw;
     }
 
     .reg-label--check {
@@ -706,11 +915,6 @@ border-bottom: 1px solid rgba(255, 255, 255, 1);
     transition: box-shadow 0.3s ease;  
 }
 
-.registry__submit_disabled:hover {
-    box-shadow: none;
-    transition: none;
-}
-
 .modal_close {
     filter: none;
     -webkit-filter: none;
@@ -723,3 +927,24 @@ border-bottom: 1px solid rgba(255, 255, 255, 1);
     transition: filter 0.3s ease; 
 }
 
+
+@media(max-width: 996px) {
+    .file-upload__back {
+        height: 13.33vw;
+        width: 90%;
+        padding: 0.53vw;
+
+        border-radius: 13.33vw;
+    }
+
+    .file-upload__back:hover {
+        box-shadow: none;
+    }
+}
+
+@media(max-width: 996px) {
+    .registry__submit:hover {
+        box-shadow: none;
+        transition: none;
+    }
+}

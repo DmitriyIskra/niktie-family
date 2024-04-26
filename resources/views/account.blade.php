@@ -5,7 +5,6 @@
     @include('template_parts.header_css_js')
     <title>Ваш личный кабинет на промостранице бренда Niktea</title>
     <meta name="description" content="Здесь вы можете выиграть путешествие, главные или чайные призы."/>
-
 </head>
 
 <body data-variant="user-account">
@@ -18,6 +17,8 @@
     </div>
 </header> 
 <script>
+
+    
     // если пользователь не авторизован, редирект на главную
     if (auther.is_auth === false) {
         window.location.href = "/";
@@ -54,6 +55,11 @@
                     </div>
                 </div>
                 <h1>Личный кабинет</h1>
+
+                <div class="user__wr-balance">
+                    <p>Ваш баланс: <span class="user__balance">50</span>  баллов</p>
+                </div>
+
                 <div class="user__data">
                     <div class="data-item green--border account__lastname"></div>
                     <div class="data-item btn-gradient-2 account__firstname"></div>
@@ -62,82 +68,190 @@
                     <div class="data-item account__mail"></div>
                 </div>
 
-                <div class="code__input--group">
-                    <p class="code__disabled-ref-text">
-                        <span>Регистрация в акции временно закрыта, но выдача подарков продолжается.</span>
-                        <span>В скором времени Вас ждет интересная бонусная программа и новые подарки.</span>
-                    </p>
-                    <div class="code__input--account--wrap">
-                        <input class="code__input__field code__input__field--account account__disabled-input" type="text" name="code" id="codeInputField" placeholder="Введите Ваш код" disabled>
-                        <div class="invalid-feedback">
-                            Вы ввели некорректный код (без кода участие в акции невозможно).
+                <div class="up-cheque">
+                    <div class="up-cheque__notice_success">Ваш чек успешно загружен</div>
+                    <div class="up-cheque__notice_fail">Не удалось загрузить чек, попробуйте еще раз</div>
+
+                    <form class="up-cheque__wr-form" name="form-cheque">
+                        <div class="up-cheque__wr-input">
+                            <input type="text" placeholder="Колличество пачек" maxlength="5">
                         </div>
-                        <div class="code__slider"> <!-- !!!!!!!!   code__sleder--display  скрытие -->
+                        <div class="up-cheque__wr-buttons">
+                            <div class="up-cheque__upload-cheque">
+                                <label>
+                                    <input type="file" name="file" id="up-cheque__upload-cheque">
+                                </label>
+                                <div class="up-cheque__button-back" for="#up-cheque__upload-cheque">
+                                    <button type="button">загрузить фото чека</button>
+                                </div>
+                            </div>
+                            <div class="up-cheque__wr-submit">
+                                <div class="up-cheque__button-back up-cheque__button-back_submit">
+                                    <button type="submit">готово</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
 
-                            <div class="code__carousel-prev" type="button" data-bs-target="#codeCarousel" data-bs-slide="prev"></div>
+                    <div class="up-cheque__instruction">
+                        <p>Убедитесь, что Ваш чек хорошо читается.</p>
+                        <p>В случае если ваш чек некорректен, баллы не будут начислены!</p>
+                    </div>
+                </div>
 
-                            <div class="code-carousel--wrap">
+                <div class="exchange__wrapper">
+                    <div class="exchange__wr-title">
+                        <h2 class="exchange__title">Обмен баллов</h2>
+                    </div>  
 
-                                <div class="swiper account__slider-add-code codeSlider">
-                                    <div class="swiper-wrapper codeslider-output">
-
-
+                    <div class="exchange__wr-extraction">
+                        <ul class="exchange__extraction-list">
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>10 баллов</span> одиннадцатая пачка в подарок
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button type="button">обменять</button>
                                     </div>
                                 </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>20 баллов</span> чайный набор (чай+кружка)
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button>обменять</button> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>40 баллов</span> годовой запас чая
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button>обменять</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>60 баллов</span> термокружка Bork
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button>обменять</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>80 баллов</span> сертификат на электронику
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button>обменять</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>100 баллов</span> Яндекс станция 2, с Алисой
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button>обменять</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>125 баллов</span> чайник Bork
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button>обменять</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>150 баллов</span> Наушники Apple AirPods Pro
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button>обменять-</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>200 баллов</span> Фен Dyson Supersonic (hd07)
+                                    </p>
+                                </div>
+                                <div class="exchange__e=xtraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button>обменять</button>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
 
-                            </div>
-
-                            <div class="code__carousel-next" type="button" data-bs-target="#codeCarousel" data-bs-slide="next"></div>
-
+                        <div class="exchange__wr-price">
+                            <p class="exchange__price">1 пачка чая = 1 балл</p>
                         </div>
-                        <button class="code__submit code__submit_disabled">ЗАРЕГИСТРИРОВАТЬ</button>
-                        <button class="code__add code__add_disabled" id="account__code-add"><img src="{{ asset('img/icons/plus.svg') }}" alt="add-icon"></button>
-                        <label for="codeInputField" class="reg-label--code">Вы можете зарегистрировать не более 15 кодов в день (на один чек).</label>
-                        <span class="code__counter--wrap">У Вас осталось для регистрации<br class="br-mob"> <span class="code__count"> 1 </span> код(ов) в день.</span>
-
-
-                        <div class="file-upload__group">
-                            <div class="account__file-result account__file_valid">Ваш чек успешно загружен</div>
-                            <div class="account__file-result account__file_invalid">Не удалось загрузить чек, попробуйте еще раз</div>
-                            <input type="file" class="file-upload__input--user" id="uploadPhoto" hidden disabled/>
-                            <label class="file-upload__label file-upload__label--width file-upload__label_disabled" id="checkUploadPhoto" for="uploadPhoto">ЗАГРУЗИТЬ ФОТО ЧЕКА</label>
-                            <span>Убедитесь, что Ваш чек хорошо читается.<br></span>
-                            <span>Вы можете зарегистрировать не более 15 чеков в день.<br>
-                            ( с 00:00 по 23:59 по Московскому времени )</span>
-                        </div>
-
                     </div>
-
                 </div>
 
 
-                <div class="code__group">
-
-                    <h1>Активные коды</h1>
-                    <div class="code__container">
-                        <ul class="code__list" data-current-page="1" aria-live="polite">
-
-
-                        </ul>
-
-                    </div>
-
-                    <div class="account__wr-pag-code">
-                        <div class="account__pag-code-arrow account__pag-code_prev">
-                            <img src="{{ asset('img/icons/pagination-arrow-left.svg') }}" class="account__pag-arrow-img" alt="pagination-arrow-left">
-                        </div>
-
-                        <div class="account__pag-num" style="text-align: center;">
-
-                        </div>
-
-                        <div class="account__pag-code-arrow account__pag-code_next">
-                            <img src="{{ asset('img/icons/pagination-arrow-right.svg') }}" class="account__pag-arrow-img" alt="pagination-arrow-right">
-                        </div>
-                    </div>
-
-
-
+                <div class="code__group">      
 
                     <div class="slider__group">
 
@@ -176,6 +290,42 @@
         </section>
     </div>
 
+
+    <!-- 
+                    -- == ИНСТРУКЦИЯ == --
+                 для класса "api-res__wrapper"
+
+        api-res__wrapper_active - активация api-res
+        --------------------------------------------
+        api-res__lottery - Вы стали участником розыгрыша!
+        api-res__no-enough - Для этого заказа у Вас не хватает баллов.
+        api-res__success - Ваш запрос успешно отправлен. Менеджер с Вами свяжется.
+        api-res__fail-send - Проблема с соединением, попробуйте еще.
+    -->
+    <div class="api-res__wrapper">
+        <div class="api-res__window">
+            <div class="api-res__content">
+                <div class="api-res__content-icon"></div>
+                <div class="api-res__content-wr-text">
+                    <p class="api-res__content-text api-res__content-text_lottery">Вы стали участником розыгрыша!</p>                
+                    <p class="api-res__content-text api-res__content-text_no-enough">Для этого заказа у Вас не хватает баллов.</p>                
+                    <p class="api-res__content-text api-res__content-text_success">Ваш запрос успешно отправлен. Менеджер с Вами свяжется.</p>                
+                    <p class="api-res__content-text api-res__content-text_fail-send">Проблема с соединением, попробуйте еще.</p>                
+                </div>
+                <div class="api-res__content-wr-button">
+                    <div class="api-res__content-button-back">
+                        <a href="#0" title="Вы стали участником розыгрыша!">подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="api-res__close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                    <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
 </main>
 
 @include('template_parts.footer')

@@ -1,5 +1,4 @@
 
-
 // Добавление кодов и чеков на странице аккаунт
 import ControllAccountAddCodes from "./accountAddCodes/controllAccountAddCodes.js";
 import RedrawAccountAddCodes from "./accountAddCodes/redrawAccountAddCodes.js";
@@ -7,13 +6,18 @@ import FetchAccountAddCodes from "./accountAddCodes/fetchAccountAddCodes.js";
 import RedrawVoucherSlider from "./accountAddCodes/redrawVoucherSlider.js";
 
 // Управоение переключением активных кодов
-import ControllActiveCodes from "./accountActiveCodes/controllActiveCodes.js";
-import RedrawActiveCodes from "./accountActiveCodes/redrawActiveCodes.js";
+// import ControllActiveCodes from "./accountActiveCodes/controllActiveCodes.js";
+// import RedrawActiveCodes from "./accountActiveCodes/redrawActiveCodes.js";
 
 // Слайдер на главной
 import ControllSlHeaderMain from "./sliderHeaderMain/controllSlHeaderMain.js";
 import RedrawSlHeaderMain from "./sliderHeaderMain/redrawSlHeaderMain.js";
 import MobileSlHeaderMain from "./sliderHeaderMain/mobileSlHeaderMain.js";
+
+// Блок с бонусами
+import ControllExchange from "./exchange/ControllExchange.js";
+import RedrawExchange from "./exchange/RedrawExchange.js";
+import ApiExchange from "./exchange/ApiExchange.js";
 
 
 window.addEventListener('load', () => {
@@ -39,18 +43,18 @@ window.addEventListener('load', () => {
 
 
         // АКТИВНЫЕ КОДЫ управление
-        const codeList = document.querySelector('.code__list');
-        const wrPag = document.querySelector('.account__wr-pag-code');
+        // const codeList = document.querySelector('.code__list');
+        // const wrPag = document.querySelector('.account__wr-pag-code');
 
-        const pagContainer = document.querySelector('.account__pag-num');
-        let pagItemsList = null;
-        setTimeout(() => {
-            pagItemsList = pagContainer.querySelector('.account__wr-code-pag-list');
+        // const pagContainer = document.querySelector('.account__pag-num');
+        // let pagItemsList = null;
+        // setTimeout(() => {
+        //     pagItemsList = pagContainer.querySelector('.account__wr-code-pag-list');
 
-            const redrawActiveCodes = new RedrawActiveCodes(codeList, wrPag, pagContainer, pagItemsList);
-            const controllActiveCodes = new ControllActiveCodes(redrawActiveCodes);
-            controllActiveCodes.init();
-        }, 2000)
+        //     const redrawActiveCodes = new RedrawActiveCodes(codeList, wrPag, pagContainer, pagItemsList);
+        //     const controllActiveCodes = new ControllActiveCodes(redrawActiveCodes);
+        //     controllActiveCodes.init();
+        // }, 2000)
     }
 
 
@@ -69,5 +73,14 @@ window.addEventListener('load', () => {
     if(swiper__mainSL) {
         const mobileSlHeaderMain = new MobileSlHeaderMain(swiper__mainSL);
         mobileSlHeaderMain.initSlider();
+    }
+
+    // Блок с бонусами
+    const exchange = document.querySelector('.exchange__wrapper');
+    if(exchange) {
+        const apiExchange = new ApiExchange();
+        const redrawExchange = new RedrawExchange(exchange);
+        const controllExchange = new ControllExchange(redrawExchange);
+        controllExchange.init();
     }
 })

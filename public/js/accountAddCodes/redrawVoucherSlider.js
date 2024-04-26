@@ -82,7 +82,6 @@ export default class RedrawVoucherSlider {
         });
     
         this.registerEvents();
-        
     }
 
     registerEvents() {
