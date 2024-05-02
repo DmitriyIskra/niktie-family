@@ -125,7 +125,7 @@ function registration() {
     // результат валидации
     let validateVoucher = null;
     // находим label для вывода результата загрузки
-    const el = check.parentElement.previousElementSibling;
+    const el = formSignIn.querySelector('.file-upload__title');
 
     // событие на загрузку чека
     check.addEventListener('change', (e) => {
@@ -140,11 +140,11 @@ function registration() {
         if(!validateVoucher) {
           check.classList.add('invalid');
           el.textContent = 'Чек должен быть изображением и не превышать 100МБ';
-          el.style = 'color: #FFC0C0;';
+          el.style.color = '#FFC0C0';
         } else {
           check.classList.remove('invalid');
           el.textContent = 'Ваш чек успешно загружен';
-          el.style = 'color: #ffffff;';
+          el.style.color = '#ffffff';
         }
 
     })
@@ -159,6 +159,12 @@ function registration() {
             patronymic = formSignIn.querySelector('[name="patronymic"]'), //получаем поле patronymic
             phone = formSignIn.querySelector('[name="phone"]'), //получаем поле phone
             email = formSignIn.querySelector('[name="email"]'), //получаем поле email
+            area = formSignIn.querySelector('[name="area"]'), //получаем поле email
+            district = formSignIn.querySelector('[name="district"]'), //получаем поле email
+            city = formSignIn.querySelector('[name="city"]'), //получаем поле email
+            street = formSignIn.querySelector('[name="street"]'), //получаем поле email
+            house = formSignIn.querySelector('[name="house"]'), //получаем поле email
+            apartment = formSignIn.querySelector('[name="apartment"]'), //получаем поле email
 
             conditions = formSignIn.querySelector('.form-check-input')
 
@@ -170,8 +176,8 @@ function registration() {
         }
 
         if(!name.value || !second_name.value || !patronymic.value
-          || !phone.value || !email.value || !check.files[0] ||
-           !conditions.checked || !validateEmail || !check.files[0]) {
+          || !phone.value || !email.value || !city.value || !street.value || !house.value 
+          || !apartment.value || !check.files[0] || !conditions.checked || !validateEmail) {
             // если все верно то страница перезагрузится и ничего менять не надо,
             // все само сбросится, иначе если хоть одно условие не верно,
             // а какие то верно то убираем ошибку на верных
@@ -180,11 +186,13 @@ function registration() {
               name.nextElementSibling.textContent = 'Заполните, пожалуйста, имя';
               name.nextElementSibling.style = 'color: #FFC0C0;';
               name.style = 'border: 1px solid #FFC0C0;';
+              name.classList.add('modal-form-registry-no-valid');
             } else if (name.value && name.matches('.invalid')) {
               name.classList.remove('invalid');
               name.nextElementSibling.textContent = 'имя';
               name.nextElementSibling.style = 'color: #ffffff;';
               name.style = 'border: 0;';
+              name.classList.remove('modal-form-registry-no-valid');
             }
 
             if(!second_name.value) {
@@ -192,11 +200,13 @@ function registration() {
               second_name.nextElementSibling.textContent = 'Заполните, пожалуйста, фамилию';
               second_name.nextElementSibling.style = 'color: #FFC0C0;';
               second_name.style = 'border: 1px solid #FFC0C0;';
+              second_name.classList.add('modal-form-registry-no-valid');
             } else if (second_name.value && second_name.matches('.invalid')) {
               second_name.classList.remove('invalid');
-              second_name.nextElementSibling.textContent = 'имя';
+              second_name.nextElementSibling.textContent = 'фамилия';
               second_name.nextElementSibling.style = 'color: #ffffff;';
               second_name.style = 'border: 0;';
+              second_name.classList.remove('modal-form-registry-no-valid');
             }
  
             if(!patronymic.value) {
@@ -204,11 +214,13 @@ function registration() {
               patronymic.nextElementSibling.textContent = 'Заполните, пожалуйста, отчество';
               patronymic.nextElementSibling.style = 'color: #FFC0C0;';
               patronymic.style = 'border: 1px solid #FFC0C0;';
+              patronymic.classList.add('modal-form-registry-no-valid');
             } else if (patronymic.value && patronymic.matches('.invalid')) {
               patronymic.classList.remove('invalid');
-              patronymic.nextElementSibling.textContent = 'имя';
+              patronymic.nextElementSibling.textContent = 'отчество';
               patronymic.nextElementSibling.style = 'color: #ffffff;';
               patronymic.style = 'border: 0;';
+              patronymic.classList.remove('modal-form-registry-no-valid');
             }
 
             if(!phone.value) {
@@ -216,11 +228,13 @@ function registration() {
               phone.nextElementSibling.textContent = 'Некорректный номер телефона';
               phone.nextElementSibling.style = 'color: #FFC0C0;';
               phone.style = 'border: 1px solid #FFC0C0;';
+              phone.classList.add('modal-form-registry-no-valid');
             } else if (phone.value && phone.matches('.invalid')) {
               phone.classList.remove('invalid');
-              phone.nextElementSibling.textContent = 'имя';
+              phone.nextElementSibling.textContent = 'Номер телефона';
               phone.nextElementSibling.style = 'color: #ffffff;';
               phone.style = 'border: 0;';
+              phone.classList.remove('modal-form-registry-no-valid');
             }
 
             if(!email.value || (email.value && !validateEmail)) {
@@ -228,18 +242,103 @@ function registration() {
               email.nextElementSibling.textContent = 'Некорректная электронная почта';
               email.nextElementSibling.style = 'color: #FFC0C0;';
               email.style = 'border: 1px solid #FFC0C0;';
+              email.classList.add('modal-form-registry-no-valid');
             } else if (email.value && validateEmail) {
               email.classList.remove('invalid');
-              email.nextElementSibling.textContent = 'имя';
+              email.nextElementSibling.textContent = 'почта';
               email.nextElementSibling.style = 'color: #ffffff;';
               email.style = 'border: 0;';
+              email.classList.remove('modal-form-registry-no-valid');
+            }
+
+            if(!city.value) {
+              city.classList.add('invalid');
+              city.style = 'border: 1px solid #FFC0C0;';
+              city.classList.add('modal-form-registry-no-valid');
+
+              const parent = city.parentElement;
+              const elLabel = parent.previousElementSibling;
+              elLabel.textContent = 'Некорректное значение';
+            } else if (city.value && city.matches('.invalid')) {
+              city.classList.remove('invalid');
+              city.style.border = '';
+              city.classList.remove('modal-form-registry-no-valid');
+
+              const parent = city.parentElement;
+              const elLabel = parent.previousElementSibling;
+              elLabel.textContent = 'город';
+              elLabel.style = 'color: #ffffff;';
+            }
+            
+            if(!street.value) {
+              street.classList.add('invalid');
+              street.style = 'border: 1px solid #FFC0C0;';
+              street.classList.add('modal-form-registry-no-valid');
+
+              const parent = street.parentElement;
+              const elLabel = parent.previousElementSibling;
+              elLabel.textContent = 'Некорректное значение';
+            } else if (street.value && street.matches('.invalid')) {
+              street.classList.remove('invalid');
+              street.style.border = '';
+              street.classList.remove('modal-form-registry-no-valid');
+
+              const parent = street.parentElement;
+              const elLabel = parent.previousElementSibling;
+              elLabel.textContent = 'улица';
+              elLabel.style = 'color: #ffffff;';
+            }
+            
+            if(!house.value) {
+              house.classList.add('invalid');
+              house.style = 'border: 1px solid #FFC0C0;';
+              house.classList.add('modal-form-registry-no-valid');
+
+              const parent = house.parentElement;
+              const elLabel = parent.previousElementSibling;
+              elLabel.textContent = 'Некорректное значение';
+            } else if (house.value && house.matches('.invalid')) {
+              house.classList.remove('invalid');
+              house.style.border = '';
+              house.classList.remove('modal-form-registry-no-valid');
+
+              const parent = house.parentElement;
+              const elLabel = parent.previousElementSibling;
+              elLabel.textContent = 'дом';
+              elLabel.style = 'color: #ffffff;';
+            }
+
+            if(!apartment.value) {
+              apartment.classList.add('invalid');
+              apartment.style = 'border: 1px solid #FFC0C0;';
+              apartment.classList.add('modal-form-registry-no-valid');
+
+              const parent = apartment.parentElement;
+              const elLabel = parent.previousElementSibling;
+              elLabel.textContent = 'Некорректное значение';
+            } else if (apartment.value && apartment.matches('.invalid')) {
+              apartment.classList.remove('invalid');
+              apartment.style.border = '';
+              apartment.classList.remove('modal-form-registry-no-valid');
+
+              const parent = apartment.parentElement;
+              const elLabel = parent.previousElementSibling;
+              elLabel.textContent = 'квартира';
+              elLabel.style = 'color: #ffffff;';
             }
 
             if(!check.files[0] || (check.files[0] && !validateVoucher)) {
               check.classList.add('invalid');
-              const el = check.parentElement.previousElementSibling;
+
+              const el = formSignIn.querySelector('.file-upload__title');
               el.textContent = 'Извините, но без чека вы не можете принять участие в акции';
-              el.style = 'color: #FFC0C0;';
+              el.style.color = '#FFC0C0';
+            } else if ((check.files[0] && validateVoucher) && check.matches('.invalid')) {
+              apartment.classList.remove('invalid');
+
+              const el = formSignIn.querySelector('.file-upload__title');
+              el.textContent = 'Загрузите, пожалуйста, чек (внимание, чек должен быть читабельным)';
+              el.style.color = '#ffffff';
             }
 
             if(!conditions.checked) {
@@ -259,7 +358,14 @@ function registration() {
         formdata.append("patronymic", patronymic.value);
         formdata.append("phone", phone.value);
         formdata.append("email", email.value);
+        formdata.append("area", area.value ? area.value : '');
+        formdata.append("district", district.value);
+        formdata.append("city", city.value);
+        formdata.append("street", street.value);
+        formdata.append("house", house.value);
+        formdata.append("apartment", apartment.value);
         formdata.append("check", check.files[0]);
+        console.log(Array.from(formdata))
 
         var settings = {
             "url": "/api/auth/register",
@@ -271,11 +377,11 @@ function registration() {
             "data": formdata
         };
 
-        $.ajax(settings).done(function (response) {
-            auth_token = JSON.parse(response).auth_token
-            console.log(document.cookie = `niktea_session=${auth_token}`)
-            window.location.href = "/account";
-        });
+        // $.ajax(settings).done(function (response) {
+        //     auth_token = JSON.parse(response).auth_token
+        //     console.log(document.cookie = `niktea_session=${auth_token}`)
+        //     window.location.href = "/account";
+        // });
     }
 }
 function logout() {

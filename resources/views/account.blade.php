@@ -69,8 +69,9 @@
                 </div>
 
                 <div class="up-cheque">
-                    <div class="up-cheque__notice_success">Ваш чек успешно загружен</div>
-                    <div class="up-cheque__notice_fail">Не удалось загрузить чек, попробуйте еще раз</div>
+                    <div class="up-cheque__notice up-cheque__notice_success">Ваш чек успешно загружен</div>
+                    <div class="up-cheque__notice up-cheque__notice_fail">Не удалось загрузить чек, попробуйте еще раз</div>
+                    <div class="up-cheque__notice up-cheque__notice_no-valid">Файл должен быть изображением и не превышать 100мб</div>
 
                     <form class="up-cheque__wr-form" name="form-cheque">
                         <div class="up-cheque__wr-input">
@@ -95,7 +96,7 @@
 
                     <div class="up-cheque__instruction">
                         <p>Убедитесь, что Ваш чек хорошо читается.</p>
-                        <p>В случае если ваш чек некорректен, баллы не будут начислены!</p>
+                        <p>Баллы будут начислены после проверки чека. В случае если ваш чек некорректен, баллы не будут начислены!</p>
                     </div>
                 </div>
 
@@ -293,6 +294,7 @@
 
     <!-- 
                     -- == ИНСТРУКЦИЯ == --
+       --- === МАЛЕНЬКИЕ ИНФОРМАЦИОННЫЕ МОДАЛКИ === --- 
                  для класса "api-res__wrapper"
 
         api-res__wrapper_active - активация api-res

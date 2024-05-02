@@ -119,7 +119,7 @@
     align-items: center;
 }
 
-.up-cheque__notice_success {
+.up-cheque__notice {
     position: absolute;
     top: 0;
 
@@ -127,8 +127,6 @@
     font-size: 1.04vw;
     font-style: normal;
     font-weight: 700;
-
-    color: #FFF;
 
     transition: opacity 0.11s linear;
 
@@ -137,22 +135,16 @@
     opacity: 0;
 }
 
+.up-cheque__notice_success {
+    color: #fff;
+}
+
 .up-cheque__notice_fail {
-    position: absolute;
-    top: 0;
-
-    font-family: 'Arsenal';
-    font-size: 1.04vw;
-    font-style: normal;
-    font-weight: 700;
-
     color: #FFC0C0;
+}
 
-    transition: opacity 0.11s linear;
-
-    transform: translateY(-155%);
-    
-    opacity: 0;
+.up-cheque__notice_no-valid {
+    color: #FFC0C0;
 }
 
 .up-cheque__notice_active {
@@ -262,6 +254,9 @@
 }
 
 .up-cheque__instruction p:last-child {
+    width: 58%;
+    margin: 0 auto;
+
     font-weight: 700;
 
     color: #FFF500;

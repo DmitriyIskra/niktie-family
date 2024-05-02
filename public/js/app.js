@@ -19,6 +19,13 @@ import ControllExchange from "./exchange/ControllExchange.js";
 import RedrawExchange from "./exchange/RedrawExchange.js";
 import ApiExchange from "./exchange/ApiExchange.js";
 
+// Добавление нового чека в аккаунте
+import ControllAccNewCheque from "./accountNewCheque/controllAccNewCheque.js";
+import RedrawAccNewCheque from "./accountNewCheque/redrawAccNewCheque.js";
+import ApiAccNewCheque from "./accountNewCheque/ApiAccNewCheque.js";
+
+
+
 
 window.addEventListener('load', () => {
 
@@ -82,5 +89,14 @@ window.addEventListener('load', () => {
         const redrawExchange = new RedrawExchange(exchange);
         const controllExchange = new ControllExchange(redrawExchange);
         controllExchange.init();
+    }
+
+    // Добавление новог чека в аккаунте
+    const cheque = document.querySelector('.up-cheque');
+    if(cheque) {
+        const redraw = new RedrawAccNewCheque(cheque);
+        const api = new ApiAccNewCheque();
+        const controll = new ControllAccNewCheque(api, redraw);
+        controll.init();
     }
 })

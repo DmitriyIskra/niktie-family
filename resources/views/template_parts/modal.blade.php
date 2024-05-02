@@ -83,17 +83,17 @@
                 <div class="logo__modal--container">
                     <img class="logo__modal--img" src="img/icons/logo-modal.svg" alt="Logo">
                 </div>
-                <form class="reg__group needs-validation" id="registerprovider" novalidate>
+                <form class="reg__group modal-form-registry needs-validation" id="registerprovider" novalidate>
                     <div class="input__group has-validation">
-                        <input class="registry__input--field form-control" type="text" name="name" id="firstName"
+                        <input class="registry__input--field form-control modal-form-registry-required" type="text" name="name" id="firstName"
                                required>
-                        <label for="firstName" class="reg-label">ИМЯ</label>
+                        <label for="firstName" class="reg-label ">ИМЯ</label>
                         <div class="invalid-feedback">
                             Заполните, пожалуйста, имя
                         </div>
                     </div>
                     <div class="input__group has-validation">
-                        <input class="registry__input--field form-control" type="text" name="second_name"
+                        <input class="registry__input--field form-control modal-form-registry-required" type="text" name="second_name"
                                id="second_name"
                                required>
                         <label for="secondName" class="reg-label">ФАМИЛИЯ</label>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                     <div class="input__group">
-                        <input class="registry__input--field form-control" type="text" name="patronymic" id="patronymic"
+                        <input class="registry__input--field form-control modal-form-registry-required" type="text" name="patronymic" id="patronymic"
                                required>
                         <label for="fathersName" class="reg-label">ОТЧЕСТВО</label>
                         <div class="invalid-feedback">
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                     <div class="input__group">
-                        <input class="registry__input--field form-control" type="text" name="phone" data-phone-pattern
+                        <input class="registry__input--field form-control modal-form-registry-required" type="text" name="phone" data-phone-pattern
                                id="phone"
                                required>
                         <label for="fathersName" class="reg-label">НОМЕР ТЕЛЕФОНА</label>
@@ -120,7 +120,7 @@
                     </div>
 
                     <div class="input__group">
-                        <input class="registry__input--field form-control" type="text" name="email" id="email" required>
+                        <input class="registry__input--field form-control modal-form-registry-required" type="text" name="email" id="email" required>
                         <label for="email" class="reg-label">ПОЧТА</label>
                         <div class="invalid-feedback">
                             Некорректная электронная почта
@@ -135,13 +135,13 @@
                             <div class="registry-form__wr-address">
                                 <label for="registry-form__address-area">область</label>
                                 <div class="registry-form__address-wr-input">
-                                    <input type="text" name="registry-form__address-district" id="registry-form__address-area">
+                                    <input type="text" name="area" id="registry-form__address-area">
                                 </div>
                             </div>
                             <div class="registry-form__wr-address">
                                 <label for="registry-form__address-district">район</label>
                                 <div class="registry-form__address-wr-input">
-                                    <input type="text" name="registry-form__address-district" id="registry-form__address-district">
+                                    <input type="text" name="district" id="registry-form__address-district">
                                 </div>
                             </div>
                         </li>
@@ -149,13 +149,13 @@
                             <div class="registry-form__wr-address">
                                 <label for="registry-form__address-city">город</label>
                                 <div class="registry-form__address-wr-input">
-                                    <input type="text" name="registry-form__address-city" id="registry-form__address-city">
+                                    <input class="modal-form-registry-required" type="text" name="city" id="registry-form__address-city">
                                 </div>
                             </div>
                             <div class="registry-form__wr-address">
                                 <label for="registry-form__address-street">улица</label>
                                 <div class="registry-form__address-wr-input">
-                                    <input type="text" name="registry-form__address-street" id="registry-form__address-street">
+                                    <input class="modal-form-registry-required" type="text" name="street" id="registry-form__address-street">
                                 </div>
                             </div>
                         </li>
@@ -163,13 +163,13 @@
                             <div class="registry-form__wr-address">
                                 <label for="registry-form__address-house">дом</label>
                                 <div class="registry-form__address-wr-input">
-                                    <input type="text" name="registry-form__address-house" id="registry-form__address-house">
+                                    <input class="modal-form-registry-required" type="text" name="house" id="registry-form__address-house">
                                 </div>
                             </div>
                             <div class="registry-form__wr-address">
                                 <label for="">квартира</label>
                                 <div class="registry-form__address-wr-input">
-                                    <input type="text" name="registry-form__address-apartment" id="registry-form__address-apartment">
+                                    <input class="modal-form-registry-required" type="text" name="apartment" id="registry-form__address-apartment">
                                 </div>
                             </div>
                         </li>
