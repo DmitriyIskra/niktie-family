@@ -44,7 +44,7 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
 
         const formData = new FormData(e.target);
         // TO DO: this place for send file 
-        super.openModalSuccess();
+        // super.openModalSuccess();
     }
 
     change(e) {
