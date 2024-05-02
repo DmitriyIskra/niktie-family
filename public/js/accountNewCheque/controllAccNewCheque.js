@@ -1,5 +1,8 @@
-export default class ControllAccNewCheque {
-    constructor(api, d) {
+import ModalInfoExchange from "../modalInfoExchange/ModalInfoExchange.js";
+
+export default class ControllAccNewCheque extends ModalInfoExchange {
+    constructor(api, d, state) {
+        super(state);
         this.api = api;
         this.d = d;
 
@@ -23,24 +26,37 @@ export default class ControllAccNewCheque {
     }
 
     click(e) {
-        
+        if(e.target.closest('.exchange__extraction-button-back')) {
+            const el = e.target.closest('.exchange__extraction-button-back');
+            this.d.clickExchange(el);
+        }
     }
 
     submit(e) {
         e.preventDefault();
 
-        const file = e.target.files && e.target.files[0];
-        console.log(e.target.file.files[0])
+        const file = e.target.file.files && e.target.file.files[0];
+        
+        if(!file) {
+            this.d.resultAddCheque('fail');
+            return;
+        }
+
+        const formData = new FormData(e.target);
+        // TO DO: this place for send file 
+        super.openModalSuccess();
     }
 
     change(e) {
         const file = e.target.files && e.target.files[0];
-        const fileType = file.type;
-        const fileSize = file.size;
-        console.log(file)
+
         if(!file) {
             this.d.resultAddCheque('fail');
+            return;
         }
+
+        const fileType = file.type;
+        const fileSize = file.size;
 
         // валидация на тип
         const validateType = /^image\/.+$/.test(fileType);

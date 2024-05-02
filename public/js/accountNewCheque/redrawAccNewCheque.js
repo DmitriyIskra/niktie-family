@@ -32,7 +32,7 @@ export default class RedrawAccNewCheque {
         }, 10000)
     }
 
-
+    // очистка данных по инфо строке при добавлении чека
     clearResultAdd() {
         this.currentStateAdd.classList.remove(this.statesAddCheque.activate);
         this.currentStateAdd = null;

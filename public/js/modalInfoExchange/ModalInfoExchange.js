@@ -11,62 +11,80 @@ export default class ModalInfoExchange {
         };
 
         this.modal = null;
-        this.click = this.click.bind(this);
+        this.modalClick = this.modalClick.bind(this);
     }
 
-    registerEvents() {
+    // РЕГИСТРАЦИЯ СОБЫТИЙ И ИХ УДАЛЕНИЕ
+
+    registerModalEvents() {
+        console.log('register modal events')
         if(this.modal) {
-            this.modal.addEventListener('click', this.click);
+            this.modal.addEventListener('click', this.modalClick);
         }
     }
 
     removeEvents() {
-        this.modal.removeEventListener('click', this.click);
+        this.modal.removeEventListener('click', this.modalClick);
     }
 
-    click(e) {
+    // СОБЫТИЯ
+
+    modalClick(e) {
         if(e.target.closest('.api-res__close')) {
             this.unactivateModal();
-            this.removeEvents();
         }
 
         if(e.target.matches('.api-res__wrapper')) {
-            this.unactivateModal();
-            this.removeEvents();
+            this.unactivateModal();  
         }
     }
 
+    // АКТИВАЦИЯ, ДЕАКТИВАЦИЯ МОДАЛОК 
+
     activateModal() {
+        console.log('activate modal')
+        // находим модалку н астранице
         if(!this.modal) {
             this.modal = document.querySelector('.api-res__wrapper');
         }
 
-        this.registerEvents();
-
+        this.registerModalEvents();
+        // активируем
         if(this.modal) this.modal.classList.add(this.state.activate);
     }
 
     unactivateModal() {
         if(this.modal) this.modal.className = 'api-res__wrapper';
+        this.removeEvents();
     }
+
+    // ОКНА ( УКАЗАНИЕ ТИПА КОНТЕНТА )
 
     openModalLottery() {
         this.activateModal();
-        this.modal.classList.add(this.state.type.lottery);
+        // указываем тип контента
+        this.setModalType('lottery');
     }
 
     openModalnoEnough() {
         this.activateModal();
-        this.modal.classList.add(this.state.type.noEnough);
+        // указываем тип контента
+        this.setModalType('noEnough');
     }
     
     openModalSuccess() {
         this.activateModal();
-        this.modal.classList.add(this.state.type.success);
+        // указываем тип контента
+        this.setModalType('success');
     }
     
     openModalFailSend() {
         this.activateModal();
-        this.modal.classList.add(this.state.type.failSend);
+        // указываем тип контента
+        this.setModalType('failSend');
+    }
+
+    setModalType(data) {
+        this.modal.classList.add(this.state.type[data]);
     }
 }

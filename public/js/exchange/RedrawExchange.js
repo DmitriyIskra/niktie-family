@@ -1,4 +1,4 @@
-import ModalInfoExchange from "./ModalInfoExchange.js";
+import ModalInfoExchange from "../modalInfoExchange/ModalInfoExchange.js";
 
 export default class RedrawExchange extends ModalInfoExchange {
     constructor(el, state) {

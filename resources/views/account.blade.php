@@ -29,7 +29,7 @@
     (async () => {
         const responce = await accountInfo()
         const result = await responce.json()
-        console.log(result)
+        
         // разделяем потому что иногда нужно получить данные
         // без отрисовки данных на всей странице
         document.addEventListener('DOMContentLoaded', fillAccountData(result))
