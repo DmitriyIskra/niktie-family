@@ -19,7 +19,7 @@
   z-index: 0; 
   border: 0 !important;
   box-shadow: 0px 0px 10px 6px #ffffffa9;
-}
+} 
 
 .modal-form_enter {
     height: fit-content;
@@ -759,17 +759,19 @@ order: 1;
         height: 465px;
         margin-left: auto;
         margin-right: auto;      
-        flex-direction: column;
-        justify-content: center;   
+        
         border-radius: 30px;       
         background: url(../img/icons/modal-bg-1-mobile.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
         background-repeat: no-repeat;
         background-size: contain;
         background-position-y: center;  
         background-position-x: center;    
-        z-index: 0; 
         border: 0 !important;
         box-shadow: 0px 0px 10px 6px #ffffffa9; 
+        
+        flex-direction: column;
+        justify-content: center;   
+        z-index: 0; 
     }
       
     .modal-body {
@@ -780,21 +782,28 @@ order: 1;
 
     .modal-form_enter {        
         height: 574px;
-        background: url(../img/icons/modal-bg-enter-mobile.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
+        padding-top: 10.67vw;
+
+        background: url('../img/icons/modal-bg-enter-mobile.svg'), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
     }
 
     .new-user-form{
-        height: 1157px;    
+        height: max-content;    
         min-width: 307px;
-        background: url(../img/icons/new-user-bg.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);          
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        padding-top: 81px;
+        
         font-size: 10px;
+
+        background: url('../img/icons/new-user-bg-mobile.svg'), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);          
+        background-size: 126% auto;
+        background-position: center;
+        background-repeat: no-repeat, no-repeat;
+
+        justify-content: initial;
       }
       
       .modal-body__registration_mobile {
-        margin-top: 83px;
+        margin-top: 0;
       }
 
       .logo__modal--img {
@@ -836,7 +845,7 @@ order: 1;
 
       .registry__submit {
         height: 50px;
-        font-size: 4.27vw;
+        font-size: 16px;
 
         border-radius: 13.33vw;
       }
@@ -848,6 +857,10 @@ order: 1;
 
       .modal-form_enter .logo__modal--container {
         margin-bottom: 20px;
+      }
+
+      .modal-header {
+        padding: 0;
       }
 
       .modal_close {
@@ -926,6 +939,7 @@ order: 1;
 
     .registry__input--field {
         width: 90%;
+        height: 50px;
     }
 
 }
@@ -952,6 +966,49 @@ order: 1;
     transition: filter 0.3s ease; 
 }
 
+
+@media(max-width: 996px) {
+    .registry-form__list {
+        width: 90%;
+        margin-top: 15px;
+        gap: 10px;
+    }
+}
+
+@media(max-width: 996px) {
+    .registry-form__item {
+        gap: 10px;
+
+        flex-direction: column;
+        justify-content: initial;
+    }
+}
+
+@media(max-width: 996px) {
+    .registry-form__wr-address {
+        width: 100%;
+    }
+}
+
+@media(max-width: 996px) {
+    .registry-form__wr-address label {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 996px) {
+    .registry-form__address-wr-input {
+        height: 50px;
+
+        border-radius: 50px;
+    }
+}
+
+@media(max-width: 996px) {
+    .registry-form__address-wr-input input {
+        border-radius: 50px;
+    }
+}
 
 @media(max-width: 996px) {
     .file-upload__back {

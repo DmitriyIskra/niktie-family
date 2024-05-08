@@ -54,7 +54,10 @@
                         <button class="log-out__button">ВЫХОД</button>
                     </div>
                 </div>
-                <h1>Личный кабинет</h1>
+                <div class="user_wr-title">
+                    <h1>Личный кабинет</h1>
+                    <div class="user_prezent-icon"></div>    
+                </div>
 
                 <div class="user__wr-balance">
                     <p>Ваш баланс: <span class="user__balance">50</span>  баллов</p>
@@ -74,24 +77,22 @@
                     <div class="up-cheque__notice up-cheque__notice_no-valid">Файл должен быть изображением и не превышать 100мб</div>
 
                     <form class="up-cheque__wr-form" name="form-cheque">
-                        <div class="up-cheque__wr-input">
-                            <input type="text" placeholder="Колличество пачек" maxlength="5">
-                        </div>
-                        <div class="up-cheque__wr-buttons">
                             <div class="up-cheque__upload-cheque">
                                 <label>
-                                    <input type="file" name="file" id="up-cheque__upload-cheque">
+                                    <input type="file" name="file" id="up-cheque__upload-cheque" multiple>
                                 </label>
                                 <div class="up-cheque__button-back" for="#up-cheque__upload-cheque">
                                     <button type="button">загрузить фото чека</button>
                                 </div>
-                            </div>
+                            </div> 
                             <div class="up-cheque__wr-submit">
                                 <div class="up-cheque__button-back up-cheque__button-back_submit">
                                     <button type="submit">готово</button>
                                 </div>
                             </div>
-                        </div>
+                            <ul class="up-cheque__wr-preview">
+                                <!-- Для превью загруженных чеков -->
+                            </ul>
                     </form>
 
                     <div class="up-cheque__instruction">
@@ -118,7 +119,9 @@
                                 </div>
                                 <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button type="button">обменять</button>
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -133,7 +136,9 @@
                                 </div>
                                 <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button>обменять</button> 
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -148,7 +153,9 @@
                                 </div>
                                 <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button>обменять</button>
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -163,7 +170,9 @@
                                 </div>
                                 <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button>обменять</button>
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -178,7 +187,9 @@
                                 </div>
                                 <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button>обменять</button>
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -193,7 +204,9 @@
                                 </div>
                                 <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button>обменять</button>
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -208,7 +221,9 @@
                                 </div>
                                 <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button>обменять</button>
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -223,7 +238,9 @@
                                 </div>
                                 <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button>обменять-</button>
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -238,7 +255,9 @@
                                 </div>
                                 <div class="exchange__e=xtraction-wr-button">
                                     <div class="exchange__extraction-button-back">
-                                        <button>обменять</button>
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
                                     </div>
                                 </div>
                             </li>
@@ -331,6 +350,7 @@
 </main>
 
 @include('template_parts.footer')
+@include('template_parts.copyright')
 <!-- событие на кнопку выход -->
 <script>
     logout()

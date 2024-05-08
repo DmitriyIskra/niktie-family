@@ -85,6 +85,6 @@
 </main>
 
 @include('template_parts.footer')
-
+@include('template_parts.copyright')
 </body>
 </html>

@@ -5,7 +5,7 @@ export default class RedrawAccNewCheque {
         this.loadButton = this.cheque.querySelector('.up-cheque__upload-cheque input');
 
         this.statesAddCheque = {
-            activate: 'up-cheque__notice_active',
+            activate: 'up-cheque__notice_active', 
             elements: {
                 success: this.cheque.querySelector('.up-cheque__notice_success'),
                 fail: this.cheque.querySelector('.up-cheque__notice_fail'),

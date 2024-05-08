@@ -47,8 +47,28 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
         // super.openModalSuccess();
     }
 
-    change(e) {
+    change(e) { // РЕАЛИЗОВАТЬ drag and drop и показ превью
+        console.log(e.target.files)
         const file = e.target.files && e.target.files[0];
+
+        const div = document.createElement('div');
+        div.style.position = 'absolute';
+        div.style.height = '150px';
+        div.style.width = '150px';
+        div.style.left = '0';
+        div.style.right = '0';
+        const img = document.createElement('img');
+
+        const filereader = new FileReader();
+        filereader.addEventListener('load', (e) => {
+            img.src = e.target.result;
+            div.append(img);
+        })
+        
+        filereader.readAsDataURL(file)
+        
+
+        document.body.append(div)
 
         if(!file) {
             this.d.resultAddCheque('fail');

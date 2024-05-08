@@ -26,18 +26,40 @@
     margin-top: 0.4vw;
 }
 
+.user_wr-title {
+    position: relative;
+}
+
 .account-form h1 {
-    color: #FFF;
+    margin-bottom: 0;
+
     text-align: center;
     font-family: 'Arsenal';
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 0.8;
+
+    color: #FFF;
+}
+
+.user_prezent-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 2.03vw;
+    height: 2.45vw;
+
+    background: no-repeat url('../img/icons/user-prezent-title-icon.png');
+    background-size: contain;
+    background-position: center;
+
+    transform: translateX(137%);
 }
 
 .user__wr-balance {
-    margin-top: 10px;
+    margin-top: 19px;
 }
 
 .user__wr-balance p {
@@ -133,7 +155,7 @@
     transform: translateY(-155%);
 
     opacity: 0;
-}
+} 
 
 .up-cheque__notice_success {
     color: #fff;
@@ -153,42 +175,13 @@
 
 .up-cheque__wr-form {
     display: flex;
-    width: 53.7%;
-    height: 2.60vw;
+    width: 26vw;
+    column-gap: 0.99vw;
 
     border-radius: 2.60vw;
-    background: rgba(255, 255, 255, 0.50);
-}
 
-.up-cheque__wr-form:focus-within {
-    box-shadow: 0px 0px 15px 5px #FFF;
-}
-
-.up-cheque__wr-input {   
-    font-family: 'Arsenal';
-    font-size: 1.04vw;
-    font-style: normal;
-    font-weight: 400;
-
-    color: #463E57;
-
-    flex-grow: 1;
-}
-
-.up-cheque__wr-input input {
-    width: 100%;
-    height: 100%;
-    padding-left: 0.83vw;
-    padding-right: 0.83vw;
-    
-    border-radius: 2.60vw;
-    background: none;
-    border: 0;
-}
-
-.up-cheque__wr-buttons {
-    display: flex;
-    gap: 0.99vw;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .up-cheque__upload-cheque {
@@ -210,7 +203,7 @@
 
 .up-cheque__button-back {
     display: flex;
-    height: 100%;
+    height: 2.6vw;
     width: 14.74vw;
     padding: 0.10vw;
 
@@ -237,8 +230,18 @@
     width: 9.38vw;
 }
 
+.up-cheque__wr-preview {
+    display: none;
+    margin: 0.99vw 0 0;
+    padding: 0;
+}
+
+.up-cheque__wr-preview_active {
+    display: block;
+}
+
 .up-cheque__instruction {
-    margin-top: 1.35vw;
+    margin-top: 1.2vw;
 }
 
 .up-cheque__instruction p {
@@ -370,15 +373,18 @@
 .exchange__extraction-button-back button {
     width: 100%;
 
+    border: 0;
+    background: no-repeat linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
+    border-radius: 2.60vw;
+}
+
+.exchange__extraction-button-text {
     font-family: 'Arsenal';
     font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
 
-    border: 0;
-    background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
-    border-radius: 2.60vw;
     color: #fff;
 }
 
@@ -745,6 +751,11 @@ text-align: center;
         .account-form h1 {
             font-size: 24px;
         }
+
+        .user_prezent-icon {
+            height: 5.45vw;
+            width: 4.03vw;
+        }
     
         .user-account {
             width: 100%;
@@ -857,6 +868,200 @@ text-align: center;
         margin-top: 30px;
     }
 }
+
+@media(max-width: 992px) {
+    .user__wr-balance {
+        margin-top: 0.6vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .user__wr-balance p {
+        margin: 0;
+
+        font-size: 3.47vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .user__data {
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque {
+        margin-top: 10.93vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque__notice {
+        font-size: 3.20vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque__wr-form {
+        width: 90%;
+
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque__button-back {
+        height: 13.33vw;
+        width: 100%;
+        padding: 0.53vw;
+
+        border-radius: 13.33vw;
+    }
+
+    .up-cheque__button-back button {
+        font-size: 4.27vw;
+
+        border-radius: 13.33vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque__upload-cheque {
+        order: 1;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque__wr-submit {
+        margin-top: 4vw;
+
+        order: 3;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque__wr-preview {
+        margin-top: 1.87vw;
+
+        order: 2;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque__instruction {
+        margin-top: 5.33vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .up-cheque__instruction p {
+        font-size: 3.20vw;
+    }
+
+    .up-cheque__instruction p:last-child {
+        width: 100%;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__wrapper {
+        width: 90%;
+        margin-top: 7.20vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__title {
+        font-size: 6.40vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__wr-extraction {
+        width: 100%;
+        margin-top: 8vw;
+        padding-bottom: 4.27vw;
+
+        border-radius: 8vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__extraction-list {
+        padding-top: 4.27vw;
+        padding-left: 3.73vw;
+        padding-right: 3.73vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__extraction-item {
+        padding-bottom: 0.5vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__extraction-descr {
+        gap: 1.87vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__extraction-img {
+        height: 10.13vw;
+        width: 10.13vw;
+
+        flex-shrink: 0;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__extraction-text {
+        width: 70%;
+
+        font-size: 3.20vw;
+        text-align: center;
+    }
+
+    .exchange__extraction-text span {
+        font-size: 3.2vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__extraction-button-back {
+        width: 16.53vw;
+        height: 10.67vw;
+        padding: 0.53vw;
+
+        border-radius: 13.33vw;
+    }
+
+    .exchange__extraction-button-back button {
+        background: no-repeat url('../img/icons/exchange-extraction-button-icon.png') ,no-repeat linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
+        background-size: 35%, auto;
+        background-position: center, center;
+        border-radius: 13.33vw;
+    }
+
+    .exchange__extraction-button-text {
+        display: none;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__wr-price {
+        margin-top: 3.47vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .exchange__wr-price p {
+        font-size: 4.27vw;
+    }
+}
+
+
 
 @media (max-width: 540px) {
 

@@ -368,6 +368,7 @@
 
 
 @include('template_parts.footer')
+@include('template_parts.copyright')
 
 <script>
     EasySlides('.slider_circle_10', {

@@ -21,7 +21,7 @@
                             data-bs-toggle="modal">РЕГИСТРАЦИЯ 
                     </button>
                 </div>
-            </div>
+            </div> 
 
         </div>
     </div>

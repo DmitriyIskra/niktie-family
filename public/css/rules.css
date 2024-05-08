@@ -21,7 +21,7 @@
 }
 
 .rules__main {
-    padding-bottom: 26vw;
+    padding-bottom: 26vw; 
 }
 
 .rules__container {
@@ -165,9 +165,13 @@
     .rules__container {
         padding-top: 25%;
         margin-top: 0px;
-        margin-bottom: 95%;
+        margin-bottom: 0;
     }
     
+    .rules__item-card_second {
+        margin-top: 15vw;
+    }
+
     .rules {      
         margin-left: auto;
         margin-right: auto;
@@ -175,21 +179,25 @@
 
     .rules-body {
         position: relative;
+
         display: flex;
-        flex-direction: column;
-        justify-content: center;       
         width: 307px;
         height: 624px;
-        aspect-ratio: 624/307;
-        border-radius: 30px;       
-        background: url(../img/icons/rules-bg-mobile.svg), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
-        background-repeat: no-repeat;
-        background-size: 100% 100%;    
-        background-position-x:center;
-        background-position-y:center;
+        margin: 0 auto;
         padding-left: 30px;
         padding-right: 30px;
+        
+        border-radius: 30px;       
+        background: url('../img/icons/rules-bg-mobile.svg'), no-repeat linear-gradient(180deg, #7775B6 0%, #494694 69.79%);      
+        background-repeat: no-repeat;
+        background-size: 126% auto;    
+        background-position-x:center;
+        background-position-y:center;
         box-shadow: 0px 0px 20px 8px #FFF;
+        
+        flex-direction: column;
+        justify-content: center;       
+        aspect-ratio: 624/307;
     }
 
     body[data-variant=rules]::after {
@@ -218,8 +226,10 @@
       }
 
       .rules__head h1{
+        width: 93%;
+        margin: 0 auto;
+
         font-size: 48px;
-        margin: 0;
       }
 
     .rules-body h2 {
@@ -241,4 +251,18 @@
         justify-content: flex-start;
     }
 
+    .docs_links__wrap p {
+        margin-top: 2.7vw;
+
+        font-size: 3.73vw;
+
+        order: 2;
+    }
+
+    .docs__wr-icon {
+        height: 22.40vw;
+        width: 18.13vw;
+
+        order: 1;
+    }
 }

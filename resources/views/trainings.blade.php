@@ -140,12 +140,20 @@
 
             </div>
 
+            <div class="trainings-page__wr-nearest-date">
+                <div class="trainings-page__nearest-date">
+                    <p>
+                        Ближайшая дата проведения: ____
+                    </p>
+                </div>
+            </div>
+
         </main>
 
 
 
         @include('template_parts.footer')
-
+        @include('template_parts.copyright')
     </div>
 </body>
 </html>

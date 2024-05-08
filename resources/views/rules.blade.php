@@ -19,7 +19,7 @@
 </header>
 @include('template_parts.modal')
 <main class="main rules__main">
-
+ 
     <div class="breadcrumbs__container">
         <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item"><a class="breadcrumbs__item__link" href="/">Главная</a></li>
@@ -57,7 +57,7 @@
             </section>
         </div>
 
-        <div class="rules__item-card">
+        <div class="rules__item-card rules__item-card_second">
             <div class="rules__head">
                 <h1>Правила участия в розыгрыше</h1>
             </div>
@@ -114,6 +114,7 @@
 </main>
 
 @include('template_parts.footer')
+@include('template_parts.copyright')
 </body>
 </html>
 
