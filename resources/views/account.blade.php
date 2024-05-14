@@ -74,12 +74,13 @@
                 <div class="up-cheque">
                     <div class="up-cheque__notice up-cheque__notice_success">Ваш чек успешно загружен</div>
                     <div class="up-cheque__notice up-cheque__notice_fail">Не удалось загрузить чек, попробуйте еще раз</div>
-                    <div class="up-cheque__notice up-cheque__notice_no-valid">Файл должен быть изображением и не превышать 100мб</div>
+                    <div class="up-cheque__notice up-cheque__notice_no-valid">Файл должен быть изображением и не превышать 10мб</div>
+                    <div class="up-cheque__notice up-cheque__notice_no-limit">За один раз Вы можете выбрать не более 10 чеков</div>
 
                     <form class="up-cheque__wr-form" name="form-cheque">
                             <div class="up-cheque__upload-cheque">
                                 <label>
-                                    <input type="file" name="file" id="up-cheque__upload-cheque" multiple>
+                                    <input type="file" name="file" id="up-cheque__upload-cheque" multiple accept="image/*">
                                 </label>
                                 <div class="up-cheque__button-back" for="#up-cheque__upload-cheque">
                                     <button type="button">загрузить фото чека</button>
@@ -87,16 +88,16 @@
                             </div> 
                             <div class="up-cheque__wr-submit">
                                 <div class="up-cheque__button-back up-cheque__button-back_submit">
-                                    <button type="submit">готово</button>
+                                    <button type="submit">отправить</button>
                                 </div>
                             </div>
-                            <ul class="up-cheque__wr-preview">
+                            <ul class="up-cheque__preview-list">
                                 <!-- Для превью загруженных чеков -->
                             </ul>
                     </form>
 
                     <div class="up-cheque__instruction">
-                        <p>Убедитесь, что Ваш чек хорошо читается.</p>
+                        <p>Убедитесь, что Ваш чек хорошо читается, а также он не должен превышать 10Мб и файл должен быть изображением.</p>
                         <p>Баллы будут начислены после проверки чека. В случае если ваш чек некорректен, баллы не будут начислены!</p>
                     </div>
                 </div>

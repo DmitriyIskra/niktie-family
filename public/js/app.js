@@ -23,6 +23,7 @@ import ApiExchange from "./exchange/ApiExchange.js";
 import ControllAccNewCheque from "./accountNewCheque/controllAccNewCheque.js";
 import RedrawAccNewCheque from "./accountNewCheque/redrawAccNewCheque.js";
 import ApiAccNewCheque from "./accountNewCheque/ApiAccNewCheque.js";
+import PatternNewCheque from "./accountNewCheque/patternNewCheque.js";
 
 
 
@@ -94,7 +95,8 @@ window.addEventListener('load', () => {
     // Добавление новог чека в аккаунте
     const cheque = document.querySelector('.up-cheque');
     if(cheque) {
-        const redraw = new RedrawAccNewCheque(cheque);
+        const pattern = new PatternNewCheque();
+        const redraw = new RedrawAccNewCheque(cheque, pattern);
         const api = new ApiAccNewCheque();
         const controll = new ControllAccNewCheque(api, redraw);
         controll.init();

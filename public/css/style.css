@@ -33,6 +33,14 @@
   font-family: 'Arsenal';
   src: url(../fonts/Arsenal/Arsenal-Regular.ttf);
   font-weight: 400;
+  font-display: 'swap';
+}
+
+@font-face {
+  font-family: 'Abel';
+  src: url(../fonts/Abel/Abel-Regular.ttf);
+  font-weight: 400;
+  font-display: 'swap';
 }
 
 @font-face {

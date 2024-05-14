@@ -370,7 +370,7 @@ function registration() {
         var settings = {
             "url": "/api/auth/register",
             "method": "POST",
-            "timeout": 0,
+            "timeout": 0, 
             "processData": false,
             "mimeType": "multipart/form-data",
             "contentType": false,
