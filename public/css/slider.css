@@ -15,8 +15,11 @@
 }
 
 .checkSlider {
+  height: 223px;
   margin-left: 35px;
   margin-right: 35px;
+
+  flex-grow: 1;
 }
 
 .slide__image::before {
@@ -173,11 +176,6 @@ margin-bottom: 66px;
     padding-right: 25px;
   }
 
-  .swiper {
-
-    width: max-content;
-  }
-
   .slider-button-prev {
     width: unset;
   }
@@ -202,6 +200,8 @@ margin-bottom: 66px;
 .checkSlider {
   margin-left: auto;
   margin-right: auto;
+
+  flex-grow: initial;
 }
 
 /* .code__slide {
@@ -235,9 +235,9 @@ margin-bottom: 66px;
   justify-content: initial;
 } */
 
-div.account__slider-check-wrapper {
+/* div.account__slider-check-wrapper {
   justify-content: center;
-}
+} */
 
 
 

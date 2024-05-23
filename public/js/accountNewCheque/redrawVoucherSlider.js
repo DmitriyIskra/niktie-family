@@ -3,8 +3,9 @@ export default class RedrawVoucherSlider {
         this.slider = null;
         this.sliderPath = sliderPath;
         this.slidesWrapper = slidesWrapper;
-        this.pagContainer = pagContainer 
+        this.pagContainer = pagContainer;
 
+        this.amountSlides = null;
 
         // стрелки пагинации
         this.voucherPaginationNext = this.pagContainer.querySelector('.pagination-next--check');
@@ -12,7 +13,7 @@ export default class RedrawVoucherSlider {
         // обертка списка пагинации
         this.paginationWrapper = this.pagContainer.querySelector('.account__pagination-list');
 
-        this.activePagination = null;
+        this.activePagination = null; 
         // Общее количество кликов
         this.counterPagination = 0;
         this.totalPagination = null;
@@ -26,13 +27,15 @@ export default class RedrawVoucherSlider {
     }
 
     initSlider() {
+        this.amountSlides = this.slidesWrapper.children.length;
+
         this.slider = new Swiper(this.sliderPath, {
             // grabCursor: true,
             // keyboard: true,
-            slidesPerView: 3,
             spaceBetween: 10,
             // loop: true,
             slideShadows: true,
+            slidesPerView: 3,
             // отменили перетаскивание на ПК
             simulateTouch: false,
             navigation: {
@@ -50,11 +53,11 @@ export default class RedrawVoucherSlider {
                     return '<span class="' + className + '">' + (index + 1) + "</span>";
                 },
             },
-    
+            
             // медиа запросы min-width
             breakpoints: {
-                1920: {
-                    slidesPerView: 3,
+                1900: {
+                    slidesPerView: 3,//this.amountSlides >=3 ? 3 : this.amountSlides,
                     // spaceBetween: 15,
                 },
                 1536: {
@@ -66,22 +69,40 @@ export default class RedrawVoucherSlider {
                     // spaceBetween: 15,
                 },
                 768: {
-                    // width: 940,
-                    slidesPerView: 3,
-                    // spaceBetween: 5,
+                    slidesPerView: 1.5,//this.amountSlides <= 3 ? 1 : 1.5,
+                    initialSlide: 2,
+                    loop: true,
+                    centeredSlides: true,
                 },
-                // 540: {
-                //   slidesPerView: 1,
-                //   // spaceBetween: 0,
-                // },
                 300: {
-                    slidesPerView: 1,
-                    // spaceBetween: 5,
+                    initialSlide: 2,
+                    loop: true,
+                    centeredSlides: true,
+                    slidesPerView: 1.5,//this.amountSlides <= 3 ? 1 : 1.5,
                 },
-            }
+            },
         });
+    }
     
-        this.registerEvents();
+    // отрисовка слайдера при загрузке страницы
+    renderingVouchers(arr) {
+        
+        // для нумерации слайда, слайды начинаются с 1, не с 0
+        let counter = arr.length + 1
+        arr.forEach( el => {
+            counter -= 1;
+            
+            const swiperSlide = this.pattern(el, counter);
+            
+            this.slidesWrapper.prepend(swiperSlide);
+        })
+        // когда в массиве от 3х чеков показываем стрелку next в пагинации
+        if(arr.length > 3) {
+            this.voucherPaginationNext.classList.add('account__pagination-arrow_active');
+            this.slidesWrapper.style = 'justify-content: normal;';
+        }
+
+        this.initSlider()
     }
 
     registerEvents() {
@@ -195,64 +216,61 @@ export default class RedrawVoucherSlider {
         this.paginationWrapper.addEventListener('click', this.offsetNum);
     }
 
-    // добавление чеков в личном кабинете
-    addVoucher(arr) {
+    // добавление чеков в личном кабинете, 
+    // ПРИНИМАЕТ ГОТОВЫЙ МАССИВ ССЫЛОК
+    addVoucher(files) {
         // когда в массиве от 3х чеков показываем стрелку next в пагинации
-        if(arr.length > 3) {
+        if(files.length > 3) {
             console.log('disabled')
             this.voucherPaginationNext.classList.add('account__pagination-arrow_active');
             this.slidesWrapper.style = 'justify-content: normal;';
         }
 
-        // (фильровать массив не нужно, новый всегда последний в массиве)
+        // (фильровать массив не нужно, новый всегда последний в массиве при получении данных с сервера)
         let counter = 0; 
-        // забираем нужный элемент из массива чеков
-        const swiperSlide = this.pattern(arr[arr.length - 1], 0);
-        // добавляем новый чек в слайдер
-        this.slidesWrapper.prepend(swiperSlide);
-        // переопределяем нумерации
-        [...this.slidesWrapper.children].forEach( el => {
-            counter += 1;
 
-            el.setAttribute('num-slide', counter);
-        })
+        files.forEach(item => {
+            const reader = new FileReader();
+
+            reader.addEventListener('load', (e) => {
+                // забираем нужный элемент из массива чеков
+                const swiperSlide = this.pattern({ticket_path: e.target.result}, null);
+                // добавляем новый чек в слайдер
+                this.slidesWrapper.prepend(swiperSlide);
+            })
+
+            reader.readAsDataURL(item);
+        });
+
+        if(innerWidth < 996) this.slider.destroy();
         // обновляем слайды
-        this.updateSlider();
-    }
-
-    // отрисовка слайдера при загрузке страницы
-    renderingVouchers(arr) {
+        setTimeout(() => {
+            if(innerWidth < 996) this.initSlider();
+            this.updateSlider();
         
-        // для нумерации слайда
-        let counter = arr.length + 1
+            [...this.slidesWrapper.children].forEach( el => {
+                counter += 1;
 
-        arr.forEach( el => {
-            counter -= 1;
-
-            const swiperSlide = this.pattern(el, counter);
-            
-            this.slidesWrapper.prepend(swiperSlide);
-        })
-        // когда в массиве от 2х чеков показываем стрелку next в пагинации
-        if(arr.length > 3) {
-            console.log('disabled')
-            this.voucherPaginationNext.classList.add('account__pagination-arrow_active');
-            this.slidesWrapper.style = 'justify-content: normal;';
-        }
+                el.setAttribute('num-slide', counter);
+            })
+        }, 30);
+        
     }
+
 
     pattern(el, counter) {
         const swiperSlide = document.createElement('div');
-        swiperSlide.classList.add('swiper-slide');
-        swiperSlide.classList.add('account__wr-slide-check');
-        swiperSlide.setAttribute('num-slide', counter)
+        // swiperSlide.classList.add('');
+        const classes = ['swiper-slide', 'account__wr-slide-check']
+        swiperSlide.classList.add(...classes);
+        if(counter) swiperSlide.setAttribute('num-slide', counter);
 
         const imgVoucher = document.createElement('img');
         imgVoucher.classList.add('account__img-check');
         imgVoucher.src = el.ticket_path;
         imgVoucher.alt = 'Чек';
  
-        swiperSlide.append(imgVoucher);
+        swiperSlide.append(imgVoucher); 
 
         return swiperSlide;
     }
@@ -267,6 +285,7 @@ export default class RedrawVoucherSlider {
     }
 
     offsetPaginationNext() {
+        console.log('work')
         // сколько всего элементов пагинации
         this.totalPagination = this.paginationWrapper.children.length;
 

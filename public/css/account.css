@@ -14,16 +14,16 @@
     align-content: center;
 }
 
+.code__group {
+    width: 68.1%;
+    margin-top: 1.3vw;
+}
 
 .user-account {
     max-width: 1350px;
     width: 80%;
     margin-left: 150px;
     margin-right: 150px; 
-}
-
-.slider__group {
-    margin-top: 0.4vw;
 }
 
 .user_wr-title {
@@ -468,29 +468,21 @@
 
 .check__slider-container {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 225px;
+    min-width: 100%;
     margin-top: 60px;
+
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.check__slider-container .swiper-slide {
-    padding: 15px; 
-    /* width: 205px !important; */
-    /* margin-right: 0 !important; */
+.check__slider-container .swiper-slide { 
+    max-width: 223px;
+    height: 100%;
     text-align: center;
     font-size: 18px;    
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-  }
+}
 
-  .check__slider-container .swiper {    
-    width: 100%;
-    /* margin-left: 35px;
-    margin-right: 35px;     */
-  }
 
 /* !!!!!!!!!!!!!!!!! мой код слайдер чеков!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -502,13 +494,15 @@
     border: 1px solid #00BD8D;
     background: #FFF;
     box-shadow: 0px 0px 0px 0px rgba(23, 56, 59, 0.10), -3px 3px 10px 0px rgba(23, 56, 59, 0.10), -13px 14px 19px 0px rgba(23, 56, 59, 0.09), -30px 31px 26px 0px rgba(23, 56, 59, 0.05), -53px 55px 30px 0px rgba(23, 56, 59, 0.01), -82px 86px 33px 0px rgba(23, 56, 59, 0.00);
+
+    overflow: hidden;
 }
 
 .account__img-check {
     width: 100%;
     height: 100%;
 
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -914,10 +908,24 @@ text-align: center;
         align-items: flex-end;
     }
 
-    
+    .code__group {
+        width: 100%;
+    }
 
     .slider__group {
         margin-top: 30px;
+    }
+
+    .check__slider-container .swiper-slide {
+        max-width: initial;
+    }
+
+    .account__slider-check-arrow {
+        display: none;
+    }
+
+    .pagination__container {
+        display: none;
     }
 }
 
@@ -993,6 +1001,8 @@ text-align: center;
 
 @media(max-width: 992px) {
     .up-cheque__preview-list {
+        min-width: 100%;
+        max-width: 100%;
         margin-top: 1.87vw;
 
         order: 2;
@@ -1007,11 +1017,9 @@ text-align: center;
 
 @media(max-width: 992px) {
     .up-cheque__instruction p {
-        font-size: 3.20vw;
-    }
+        width: 100% !important;
 
-    .up-cheque__instruction p:last-child {
-        width: 100%;
+        font-size: 3.20vw;
     }
 }
 
@@ -1199,7 +1207,9 @@ text-align: center;
     }
 
     .check__slider-container {
+        display: block;
         height: 57vw;
+        min-width: initial;
     }
 
     .slider-button-prev, .slider-button-next {
@@ -1219,10 +1229,6 @@ text-align: center;
         max-width: 17.16vw;
     }
 
-    .account__slider-check-arrow {
-        display: none;
-    }
-
     .check__slider-container .swiper {
         height: 100%;
     }
@@ -1231,9 +1237,7 @@ text-align: center;
         height: 100%;
     }
 
-    .pagination__container {
-        display: none;
-    }
+    
 
 }
 

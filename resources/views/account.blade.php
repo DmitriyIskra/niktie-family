@@ -29,7 +29,7 @@
     (async () => {
         const responce = await accountInfo()
         const result = await responce.json()
-        
+
         // разделяем потому что иногда нужно получить данные
         // без отрисовки данных на всей странице
         document.addEventListener('DOMContentLoaded', fillAccountData(result))
@@ -48,7 +48,6 @@
         <section class="user-account">
 
             <div class="account-form">
-
                 <div class="wr-exit">
                     <div class="wr-button-exit">
                         <button class="log-out__button">ВЫХОД</button>
@@ -58,7 +57,7 @@
                     <h1>Личный кабинет</h1>
                     <div class="user_prezent-icon"></div>    
                 </div>
-
+                <img src="https://s405vlx.storage.yandex.net/rdisk/5e24b66a91af28691a4dace47fde995288c3698cd09f531c0a059eb4960c54bc/66488cfd/0JuFFzj6vEKtTl6asCetFak9aTFJ5XBPIGOXGd8vM29sb-Gd7hLFuZySE2ykhPgH8El9YsVXjg7Okld9ggp6mA==?uid=858722928&filename=200.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=858722928&fsize=5465&hid=0490bac22f43f1689eef7b9106daf3b7&media_type=image&tknv=v2&etag=9b5e7d12bd2dcdfb26b8cfabfe518ef6&ts=618b8894f7940&s=4c65a6456e0a4af19244edb7f85c18aca5ea47a69d75f08d2f3c8e684f09c813&pb=U2FsdGVkX1-zhClRoIqBJvZCNknmt_v9bcJgSylt2xTalgLTOeTlPuvQ_8lNBiPjkfETdM0I-KdO4MK2m2h1Y21xutx-3yp__pXPsRWEo1Q" height="100" width="100" alt="">
                 <div class="user__wr-balance">
                     <p>Ваш баланс: <span class="user__balance">50</span>  баллов</p>
                 </div>
@@ -95,7 +94,7 @@
                                 <!-- Для превью загруженных чеков -->
                             </ul>
                     </form>
-
+                    
                     <div class="up-cheque__instruction">
                         <p>Убедитесь, что Ваш чек хорошо читается, а также он не должен превышать 10Мб и файл должен быть изображением.</p>
                         <p>Баллы будут начислены после проверки чека. В случае если ваш чек некорректен, баллы не будут начислены!</p>
@@ -282,10 +281,12 @@
                             <div class="slider-button-prev account__slider-check-arrow" tabindex="0" role="button"></div>
 
                             <div class="swiper checkSlider account__slider-check">
-                                <div class="swiper-wrapper checkSlides account__slider-check-wrapper">
 
+                                <div class="swiper-wrapper checkSlides account__slider-check-wrapper">
+                                    
                                 </div>
-                            </div>
+
+                            </div> 
 
                             <div class="slider-button-next account__slider-check-arrow account__slider-check-arrow_active" tabindex="0" role="button"></div>
 
