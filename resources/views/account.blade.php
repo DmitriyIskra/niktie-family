@@ -57,7 +57,6 @@
                     <h1>Личный кабинет</h1>
                     <div class="user_prezent-icon"></div>    
                 </div>
-                <img src="https://s405vlx.storage.yandex.net/rdisk/5e24b66a91af28691a4dace47fde995288c3698cd09f531c0a059eb4960c54bc/66488cfd/0JuFFzj6vEKtTl6asCetFak9aTFJ5XBPIGOXGd8vM29sb-Gd7hLFuZySE2ykhPgH8El9YsVXjg7Okld9ggp6mA==?uid=858722928&filename=200.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=858722928&fsize=5465&hid=0490bac22f43f1689eef7b9106daf3b7&media_type=image&tknv=v2&etag=9b5e7d12bd2dcdfb26b8cfabfe518ef6&ts=618b8894f7940&s=4c65a6456e0a4af19244edb7f85c18aca5ea47a69d75f08d2f3c8e684f09c813&pb=U2FsdGVkX1-zhClRoIqBJvZCNknmt_v9bcJgSylt2xTalgLTOeTlPuvQ_8lNBiPjkfETdM0I-KdO4MK2m2h1Y21xutx-3yp__pXPsRWEo1Q" height="100" width="100" alt="">
                 <div class="user__wr-balance">
                     <p>Ваш баланс: <span class="user__balance">50</span>  баллов</p>
                 </div>
@@ -74,7 +73,7 @@
                     <div class="up-cheque__notice up-cheque__notice_success">Ваш чек успешно загружен</div>
                     <div class="up-cheque__notice up-cheque__notice_fail">Не удалось загрузить чек, попробуйте еще раз</div>
                     <div class="up-cheque__notice up-cheque__notice_no-valid">Файл должен быть изображением и не превышать 10мб</div>
-                    <div class="up-cheque__notice up-cheque__notice_no-limit">За один раз Вы можете выбрать не более 10 чеков</div>
+                    <div class="up-cheque__notice up-cheque__notice_no-limit">За один раз Вы можете выбрать не более 6 чеков</div>
 
                     <form class="up-cheque__wr-form" name="form-cheque">
                             <div class="up-cheque__upload-cheque">
@@ -85,20 +84,42 @@
                                     <button type="button">загрузить фото чека</button>
                                 </div>
                             </div> 
-                            <div class="up-cheque__wr-submit">
-                                <div class="up-cheque__button-back up-cheque__button-back_submit">
-                                    <button type="submit">отправить</button>
-                                </div>
-                            </div>
-                            <ul class="up-cheque__preview-list">
-                                <!-- Для превью загруженных чеков -->
-                            </ul>
                     </form>
                     
                     <div class="up-cheque__instruction">
                         <p>Убедитесь, что Ваш чек хорошо читается, а также он не должен превышать 10Мб и файл должен быть изображением.</p>
                         <p>Баллы будут начислены после проверки чека. В случае если ваш чек некорректен, баллы не будут начислены!</p>
                     </div>
+                    <div class="up-cheque__back-wr-preview">
+                        <div class="up-cheque__wr-preview">
+                            <div class="up-cheque__preview-wr-close">
+                                <div class="up-cheque__preview-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <g clip-path="url(#clip0_3031_1566)">
+                                            <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                            <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3031_1566">
+                                                <rect width="30" height="30" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="up-cheque__preview-list">
+                                <!-- Для превью загруженных чеков -->
+                            </ul>
+    
+                            <div class="up-cheque__preview-wr-button">
+                                <div class="up-cheque__button-back up-cheque__button-back_submit">
+                                    <button type="button">отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="exchange__wrapper">
@@ -277,7 +298,7 @@
 
                         <h1>Ваши чеки</h1>
 
-                        <div class="check__slider-container">
+                        <!-- <div class="check__slider-container">
                             <div class="slider-button-prev account__slider-check-arrow" tabindex="0" role="button"></div>
 
                             <div class="swiper checkSlider account__slider-check">
@@ -303,8 +324,29 @@
                             <div class="pagination-next account__pagination-arrow pagination-next--check">
                                 <img src="{{ asset('img/icons/pagination-arrow-right.svg') }}" class="account__pag-arrow-img" alt="pagination-arrow-right">
                             </div>
-                        </div>
+                        </div> -->
 
+                        <div class="chequebook">
+                            <ul class="chequebook__cheque-list">
+
+                            </ul>
+                            <div class="chequebook__pagination">
+                                <div class="chequebook__arrow chequebook__arrow-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 20" fill="none">
+                                        <path d="M10 2L2 10L10 18" stroke="white" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="chequebook__wr-pagination-list">
+                                    <ul class="chequebook__pagination-list"></ul>
+                                </div>
+
+                                <div class="chequebook__arrow chequebook__arrow-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 20" fill="none">
+                                        <path d="M2 2L10 10L2 18" stroke="white" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>

@@ -1,11 +1,11 @@
 import ModalInfoExchange from "../modalInfoExchange/ModalInfoExchange.js";
 
 export default class ControllAccNewCheque extends ModalInfoExchange {
-    constructor(api, d, slider, state) {
+    constructor(api, d, update, state) {
         super(state);
         this.api = api;
         this.d = d;
-        this.slider = slider;
+        this.update = update;
 
         this.dropZone = document.body;
 
@@ -22,15 +22,15 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
         //     const e = await this.api.a();
         //     console.log('from control', e)
         // })();
-        this.startSliderCheque();
+
         this.registerEvents();
-        this.slider.registerEvents();
     }
 
     registerEvents() { 
         this.d.cheque.addEventListener('click', this.click);
         this.d.loadButton.addEventListener('change', this.change);
-        this.d.form.addEventListener('submit', this.submit);
+        // this.d.form.addEventListener('submit', this.submit);
+        this.d.previewClose.addEventListener('click', this.click);
 
         this.dropZone.addEventListener('dragenter', e => e.preventDefault());
         this.dropZone.addEventListener('dragover', e => e.preventDefault());
@@ -47,10 +47,9 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
      * инициализации и отрисовки чеков
      * **/ 
     async startSliderCheque() {
+        // запрос за фото чеков
         // const response = await this.api.read();
         // this.accountInfo = await response.json();
-        
-        // this.slider.renderingVouchers(this.accountInfo.registered_tickets);
         
         // --- START ДЛЯ ОТЛАДКИ ---
         
@@ -63,12 +62,8 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
             {ticket_path: "./img/content/priz/fan-priz.png"},
             {ticket_path: "./img/content/priz/alice.png"},
         ];
-        this.slider.renderingVouchers(arr);
 
         // --- END ДЛЯ ОТЛАДКИ ---
-
-        
-        // отправляем ссылки на фото чеков 
     }
 
     click(e) {
@@ -76,33 +71,43 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
             const el = e.target.closest('.exchange__extraction-button-back');
             this.d.clickExchange(el);
         } 
+
+        if(e.target.closest('.up-cheque__preview-wr-close')) {
+            this.d.hidePreview();
+            this.files = [];
+        }
+
+        if(e.target.closest('.up-cheque__button-back_submit')) {
+            const formData = this.submit();
+            // очищаем данные и отображения после отправки на сервер
+            this.files = [];
+            this.d.hidePreview();
+
+            // Обновляем книгу с фото чеков
+            this.update(formData);
+        } 
     }
 
-    submit(e) {
-        e.preventDefault();
-        
+    submit() {
+        // если ни одного файла не выбрано
         if(!this.files.length) {
             this.d.resultAddCheque('fail');
             return;
         }
         /**
-          * Массив для сбора прочитанных файлов,
-          * для последующей отправки в слайдер с чеками
+          * FormData для сбора прочитанных файлов,
+          * для последующей отправки на сервер
+          * и в альбом с чеками
         **/ 
-        let listFilesForSlider = [];
         const formData = new FormData();
         this.files.forEach(item => {
             formData.append(`file`, item);       
         });
-        // Добавляем в слайдер с чеками
-        this.slider.addVoucher(this.files);
 
         // TO DO: this place for send file 
         // super.openModalSuccess();
-        this.files = [];
-        this.d.amountPreview = 0;
-        this.d.clearPreview();
-        this.d.form.reset();
+
+        return formData;
     }
 
     change(e) { // РЕАЛИЗОВАТЬ drag and drop и показ превью
@@ -155,7 +160,7 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
 
     validation(files) {
         // Можно выбрать не более 30 файлов
-        const isLength = files.length <= 10;
+        const isLength = files.length <= 6;
 
         // все файлы должны быть валидны 
         const isValid = [...files].every(item => {

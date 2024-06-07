@@ -1,5 +1,5 @@
 export default class RedrawVoucherSlider {
-    constructor(sliderPath, slidesWrapper, pagContainer) {
+    constructor(sliderPath, slidesWrapper, pagContainer) { 
         this.slider = null;
         this.sliderPath = sliderPath;
         this.slidesWrapper = slidesWrapper;
@@ -238,7 +238,7 @@ export default class RedrawVoucherSlider {
                 // добавляем новый чек в слайдер
                 this.slidesWrapper.prepend(swiperSlide);
             })
-
+ 
             reader.readAsDataURL(item);
         });
 

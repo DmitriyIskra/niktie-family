@@ -14,33 +14,17 @@ import ControllAccNewCheque from "./accountNewCheque/controllAccNewCheque.js";
 import RedrawAccNewCheque from "./accountNewCheque/redrawAccNewCheque.js";
 import ApiAccNewCheque from "./accountNewCheque/ApiAccNewCheque.js";
 import PatternNewCheque from "./accountNewCheque/patternNewCheque.js";
-import RedrawVoucherSlider from "./accountNewCheque/redrawVoucherSlider.js";
+// import RedrawVoucherSlider from "./accountNewCheque/redrawVoucherSlider.js";
 
+// Книга с фото чеков в аккаунте
+import ControllСhequesbook from "./chequebook/controllСhequesbook.js";
+import RedrawСhequesbook from "./chequebook/redrawСhequesbook.js";
+import ApiСhequesbook from "./chequebook/apiСhequesbook.js";
+import PatternChequesbook from "./chequebook/patternChequesbook.js";
 
 
 
 window.addEventListener('load', () => {
-    // УДАЛИТЬ!!!!!!
-    // const accAddCodeGroup = document.querySelector('.code__input--group');
-
-    // if(accAddCodeGroup) {
-    //     // добавление кодов и чеков (управление слайдером чеков)
-    //     const domainReg = '/api/auth/register';
-    //     const domainVoucher = `/api/code/checkout`;
-    //     const domains = [domainReg, domainVoucher];
-    //     
-    //     
-
-    //     const drawAccAddCodes = new RedrawAccountAddCodes(accAddCodeGroup); 
-    //     const fetchAccAddCodes = new FetchAccountAddCodes(domains);
-    //       const redrawVoucherSlider = new RedrawVoucherSlider(voucherSlider, slidesWrapper, voucherPaginContainer);
-    //     const arr = [drawAccAddCodes, fetchAccAddCodes, redrawVoucherSlider]
-    //     const controllAccAddCodes = new ControllAccountAddCodes(arr);
-
-    //     controllAccAddCodes.init(); 
-
-    // }
-
 
     // Слайдер для HEADER
     const sliderHead = document.querySelector('.slider-hm');
@@ -68,18 +52,27 @@ window.addEventListener('load', () => {
         controllExchange.init();
     }
 
-    // Добавление нового чека в аккаунте
+    // Добавление нового чека в аккаунте и управление книгой с чеками
     const cheque = document.querySelector('.up-cheque');
     if(cheque) {
-        const voucherSlider = '.account__slider-check';
-        const slidesWrapper = document.querySelector('.account__slider-check-wrapper');
-        const pagination = document.querySelector('.pagination__container');
-
-        const sliderCheque = new RedrawVoucherSlider(voucherSlider, slidesWrapper, pagination);
+        // const voucherSlider = '.account__slider-check';
+        // const slidesWrapper = document.querySelector('.account__slider-check-wrapper');
+        // const pagination = document.querySelector('.pagination__container');
+        const chequebook = document.querySelector('.chequebook');
+        const patternCh = new PatternChequesbook();
+        const apiCh = new ApiСhequesbook();
+        const redrawCh = new RedrawСhequesbook(chequebook, patternCh);
+        const controllCh = new ControllСhequesbook(redrawCh, apiCh);
+        controllCh.init();
+        // метод для обновления фото чеков в книге
+        const update = redrawCh.update;
+     
+        // const sliderCheque = new RedrawVoucherSlider(voucherSlider, slidesWrapper, pagination);
         const pattern = new PatternNewCheque();
         const redraw = new RedrawAccNewCheque(cheque, pattern);
         const api = new ApiAccNewCheque();
-        const controll = new ControllAccNewCheque(api, redraw, sliderCheque);
+        const controll = new ControllAccNewCheque(api, redraw, update); //sliderCheque
         controll.init();
     }
 })
+ 

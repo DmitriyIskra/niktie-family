@@ -4,8 +4,10 @@ export default class RedrawAccNewCheque {
         this.pattern = pattern;
         this.form = this.cheque.querySelector('form');
         this.loadButton = this.cheque.querySelector('.up-cheque__upload-cheque input');
-        this.sendButton = this.cheque.querySelector('.up-cheque__wr-submit');
-        this.previews = this.cheque.querySelector('.up-cheque__preview-list');
+        this.sendButton = this.cheque.querySelector('.up-cheque__preview-wr-button');
+        this.previewsModal = this.cheque.querySelector('.up-cheque__back-wr-preview');
+        this.previewClose = this.cheque.querySelector('.up-cheque__preview-wr-close');
+        this.previewList = this.cheque.querySelector('.up-cheque__preview-list');
 
         this.statesAddCheque = {
             activate: 'up-cheque__notice_active', 
@@ -46,32 +48,32 @@ export default class RedrawAccNewCheque {
 
         clearTimeout(this.lastCloseTimeOutID);
         this.lastCloseTimeOutID = null;
+    } 
+
+    showPreview() {
+        this.previewsModal.classList.add('up-cheque__back-wr-preview_active');
     }
 
-    renderPreview(files) {
-        // const data = [...files].map(file => {
-        //     let num = String(this.amountPreview += 1);
-        //     num = num.padStart(3, '0'); // добавляем нули если нужно
-    
-        //     return {
-        //         num,
-        //         file,
-        //     };
-        // })
-        
+    hidePreview() {
+        this.previewsModal.classList.remove('up-cheque__back-wr-preview_active');
+        this.clearPreview();
+    }
+
+    renderPreview(files) {        
         // формируем превью
         const previews = this.pattern.create(files);
        
         // Активируем блок с превью
-        this.previews.classList.add('up-cheque__preview-list_active');
+        this.showPreview();
 
         // добавляем превью
-        this.previews.append(...previews);
+        this.previewList.append(...previews);
     }
 
     clearPreview() {
-        // [...this.previews.children].forEach(item => item.remove());
-        this.previews.replaceChildren()
-        this.previews.classList.remove('up-cheque__preview-list_active');
+        // очищаем список превью
+        this.previewList.replaceChildren();
+        this.amountPreview = 0;
+        this.form.reset();
     }
 }

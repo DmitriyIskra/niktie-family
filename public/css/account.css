@@ -205,90 +205,6 @@
     display: none;
 }
 
-.up-cheque__button-back {
-    display: flex;
-    height: 2.6vw;
-    width: 14.74vw;
-    padding: 0.10vw;
-
-    background: no-repeat linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%);
-    border-radius: 2.60vw;
-}
-
-.up-cheque__button-back button {
-    width: 100%;
-
-    font-family: 'Arsenal';
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
-
-    border: 0;
-    background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
-    border-radius: 2.60vw;
-    color: #fff;
-}
-
-.up-cheque__button-back_submit {
-    width: 9.38vw;
-}
-
-.up-cheque__preview-list {
-    display: none;
-    min-width: 119%;
-    max-width: 119%;
-    margin: 0.99vw 0 0;
-    padding: 0;
-    gap: 0.63vw;
-
-    flex-wrap: wrap;
-}
-
-.up-cheque__preview-item {
-    width: 1.72vw;
-    margin: 0;
-    padding: 0;
-
-    list-style-type: none;
-
-    overflow: hidden;
-}
-
-.up-cheque__preview-list_active {
-    display: flex;
-}
-
-.up-cheque__preview-item-wr-img {
-    width: 100%;
-    height: 2.08vw;
-    margin: 0 auto;
-}
-
-.up-cheque__preview-item-wr-img img {
-    height: 100%;
-    width: 100%;
-
-    object-fit: cover;
-    object-position: center;
-}
-
-.up-cheque__preview-item p {
-    margin: 0.1vw 0 0;
-
-    font-family: 'Abel';
-    font-weight: 400;
-    font-size: 0.6vw;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-    color: #fff;
-
-    overflow: hidden;
-    user-select: none;
-}
-
 .up-cheque__instruction {
     margin-top: 1.2vw;
 }
@@ -316,6 +232,144 @@
 
     color: #FFF500;
 }
+
+.up-cheque__back-wr-preview {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.up-cheque__back-wr-preview_active {
+    display: flex;
+}
+
+.up-cheque__wr-preview {
+    width: 18.23vw;
+    min-height: 21.77vw;
+    padding-bottom: 4.06vw;
+
+    border-radius: 1.56vw;
+    background: no-repeat url('../img/modal-preview-leaf.png'), no-repeat linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
+    background-size: 125% 125%;
+    background-position: center;
+    box-shadow: 0px 0px 20px 8px #FFF;
+}
+
+.up-cheque__preview-wr-close {
+    display: flex;
+
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.up-cheque__preview-close {
+    width: 1.56vw;
+    height: 1.56vw;
+
+    margin-top: 1.41vw;
+    margin-right: 1.41vw;
+}
+
+.up-cheque__preview-list {
+    display: flex;
+    width:  59.5%;
+    margin: 2.14vw auto 0;
+    padding: 0;
+    /* column-gap: 0.94vw; */
+    row-gap: 0.73vw;
+
+    flex-wrap: wrap;
+}
+
+.up-cheque__preview-item {
+    display: flex;
+    width: 33.333%;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.up-cheque__preview-item-wr-img {
+    width: 2.76vw;
+    height: 3.18vw;
+}
+
+.up-cheque__preview-item-wr-img img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.up-cheque__preview-item p {
+    width: 2.4vw;
+    margin: 0.1vw 0 0;
+
+    font-family: 'Abel';
+    font-weight: 400;
+    font-size: 0.52vw;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    color: #fff;
+
+    overflow: hidden;
+    user-select: none;
+}
+
+.up-cheque__preview-wr-button {
+    display: flex;
+    margin-top: 1.51vw;
+
+    justify-content: center;
+}
+
+.up-cheque__button-back {
+    display: flex;
+    height: 2.6vw;
+    width: 14.74vw;
+    padding: 0.10vw;
+
+    background: no-repeat linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%);
+    border-radius: 2.60vw;
+}
+
+.up-cheque__button-back_submit {
+    width:  59.5%;
+}
+
+.up-cheque__button-back button {
+    width: 100%;
+
+    font-family: 'Arsenal';
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    border: 0;
+    background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
+    border-radius: 2.60vw;
+    color: #fff;
+}
+
 
 /* --- END ЗАГРУЗКА ЧЕКОВ --- */
 

@@ -1,5 +1,5 @@
 export default class PatternNewCheque {
-
+    // СОЗДАЕТ ЭЛЕМЕНТЫ ПРЕВЬЮ
     /**
      * Получаем массив
      * files - номер превью и файл
@@ -14,7 +14,7 @@ export default class PatternNewCheque {
 
             const number = this.createElement('p', null, item.name);
 
-            const reader = new FileReader();
+            const reader = new FileReader(); 
 
             reader.addEventListener('load', (e) => {
                 image.src = e.target.result;
