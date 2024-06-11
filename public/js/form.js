@@ -15,7 +15,6 @@ function deleteAllCookies() {
 }
 function CurrentAuthorizeCheck(){
     let a = null
-    console.log(getCookie("niktea_session"))
 
     cookie_auth = getCookie("niktea_session")
     
@@ -159,6 +158,7 @@ function registration() {
             patronymic = formSignIn.querySelector('[name="patronymic"]'), //получаем поле patronymic
             phone = formSignIn.querySelector('[name="phone"]'), //получаем поле phone
             email = formSignIn.querySelector('[name="email"]'), //получаем поле email
+            index = formSignIn.querySelector('[name="index"]'), //получаем поле index
             area = formSignIn.querySelector('[name="area"]'), //получаем поле email
             district = formSignIn.querySelector('[name="district"]'), //получаем поле email
             city = formSignIn.querySelector('[name="city"]'), //получаем поле email
@@ -177,7 +177,7 @@ function registration() {
 
         if(!name.value || !second_name.value || !patronymic.value
           || !phone.value || !email.value || !city.value || !street.value || !house.value 
-          || !apartment.value || !check.files[0] || !conditions.checked || !validateEmail) {
+          || !check.files[0] || !conditions.checked || !validateEmail) {
             // если все верно то страница перезагрузится и ничего менять не надо,
             // все само сбросится, иначе если хоть одно условие не верно,
             // а какие то верно то убираем ошибку на верных
@@ -308,25 +308,6 @@ function registration() {
               elLabel.style = 'color: #ffffff;';
             }
 
-            if(!apartment.value) {
-              apartment.classList.add('invalid');
-              apartment.style = 'border: 1px solid #FFC0C0;';
-              apartment.classList.add('modal-form-registry-no-valid');
-
-              const parent = apartment.parentElement;
-              const elLabel = parent.previousElementSibling;
-              elLabel.textContent = 'Некорректное значение';
-            } else if (apartment.value && apartment.matches('.invalid')) {
-              apartment.classList.remove('invalid');
-              apartment.style.border = '';
-              apartment.classList.remove('modal-form-registry-no-valid');
-
-              const parent = apartment.parentElement;
-              const elLabel = parent.previousElementSibling;
-              elLabel.textContent = 'квартира';
-              elLabel.style = 'color: #ffffff;';
-            }
-
             if(!check.files[0] || (check.files[0] && !validateVoucher)) {
               check.classList.add('invalid');
 
@@ -358,6 +339,7 @@ function registration() {
         formdata.append("patronymic", patronymic.value);
         formdata.append("phone", phone.value);
         formdata.append("email", email.value);
+        formdata.append("index", index.value);
         formdata.append("area", area.value ? area.value : '');
         formdata.append("district", district.value);
         formdata.append("city", city.value);
@@ -403,6 +385,8 @@ function logout() {
                 window.location.href = "/";
             }
         });
+
+        sessionStorage.clear();
     }
 }
 async function accountInfo() {
@@ -415,19 +399,47 @@ async function accountInfo() {
 }
 // отрисовка данных о пользователе на всей странице личный кабинет
 function fillAccountData(data) {
-    const accountLastname = document.querySelector('.account__lastname');
-    const accountFirstname = document.querySelector('.account__firstname');
-    const accountPatronymic = document.querySelector('.account__patronymic');
-    const accountPhone = document.querySelector('.account__phone');
-    const accountMail = document.querySelector('.account__mail');
-   
+  const accountLastname = document.querySelector('.account__lastname');
+  const accountFirstname = document.querySelector('.account__firstname');
+  const accountPatronymic = document.querySelector('.account__patronymic');
+  const accountPhone = document.querySelector('.account__phone');
+  const accountMail = document.querySelector('.account__mail');
+  const accountIndex = document.querySelector('.user-data__data_index');
+  const accountCity = document.querySelector('.user-data__data_city');
+  const accountArea = document.querySelector('.user-data__data_area');
+  const accountStreet = document.querySelector('.user-data__data_street');
+  const accountDistrict = document.querySelector('.user-data__data_district');
+  const accountHouse = document.querySelector('.user-data__data_house');
+  const accountApartment = document.querySelector('.user-data__data_apartment');
+  
 
-    // Заполнение данных о пользователе
-    accountLastname.textContent = data.user.second_name;
-    accountFirstname.textContent = data.user.name;
-    accountPatronymic.textContent = data.user.patronymic;
-    accountPhone.textContent = data.user.phone;
-    accountMail.textContent = data.user.email;
+  // Заполнение данных о пользователе
+  accountLastname.textContent = data.user.second_name;
+  accountFirstname.textContent = data.user.name;
+  accountPatronymic.textContent = data.user.patronymic;
+  accountPhone.textContent = data.user.phone;
+  accountMail.textContent = data.user.email;
+  accountIndex.textContent = '303842';
+  accountCity.textContent = `Московская обл`;
+  accountArea.textContent = `Ногинский р-он`;
+  accountStreet.textContent = `Электросталь`;
+  accountDistrict.textContent = `ул.Ленина`;
+  accountHouse.textContent = `д. 5`;
+  accountApartment.textContent = `кв. 97`;
+
+  // готовим объект для sessionStorage
+  const infoAccount = {
+    index : '303842',
+    area : 'Московская',
+    district : 'Ногинский',
+    city : 'Электросталь',
+    street : 'Ленина',
+    house : '5',
+    apartment : '97',
+  }
+
+  // Сохраняем в сессии
+  sessionStorage.infoAccount = JSON.stringify(infoAccount);
 }
 
 function controllMobileMenu() {

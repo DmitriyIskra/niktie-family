@@ -17,7 +17,6 @@ export default class ModalInfoExchange {
     // РЕГИСТРАЦИЯ СОБЫТИЙ И ИХ УДАЛЕНИЕ
 
     registerModalEvents() {
-        console.log('register modal events')
         if(this.modal) {
             this.modal.addEventListener('click', this.modalClick);
         }
@@ -42,7 +41,6 @@ export default class ModalInfoExchange {
     // АКТИВАЦИЯ, ДЕАКТИВАЦИЯ МОДАЛОК 
 
     activateModal() {
-        console.log('activate modal')
         // находим модалку н астранице
         if(!this.modal) {
             this.modal = document.querySelector('.api-res__wrapper');

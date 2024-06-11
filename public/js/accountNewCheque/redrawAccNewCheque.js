@@ -4,9 +4,7 @@ export default class RedrawAccNewCheque {
         this.pattern = pattern;
         this.form = this.cheque.querySelector('form');
         this.loadButton = this.cheque.querySelector('.up-cheque__upload-cheque input');
-        this.sendButton = this.cheque.querySelector('.up-cheque__preview-wr-button');
         this.previewsModal = this.cheque.querySelector('.up-cheque__back-wr-preview');
-        this.previewClose = this.cheque.querySelector('.up-cheque__preview-wr-close');
         this.previewList = this.cheque.querySelector('.up-cheque__preview-list');
 
         this.statesAddCheque = {
@@ -30,7 +28,7 @@ export default class RedrawAccNewCheque {
         if(this.lastCloseTimeOutID) {
             this.clearResultAdd();
         };
-
+ 
         // активируем инфо строку с необходимым контентом, по результату добавления файла (чека)
         this.currentStateAdd = this.statesAddCheque.elements[type];
         this.currentStateAdd.classList.add(this.statesAddCheque.activate);

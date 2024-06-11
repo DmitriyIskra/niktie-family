@@ -133,6 +133,14 @@
                     <ul class="registry-form__list">
                         <li class="registry-form__item">
                             <div class="registry-form__wr-address">
+                                <label for="registry-form__address-index">индекс</label>
+                                <div class="registry-form__address-wr-input">
+                                    <input type="text" name="index" id="registry-form__address-index">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="registry-form__item">
+                            <div class="registry-form__wr-address">
                                 <label for="registry-form__address-area">область</label>
                                 <div class="registry-form__address-wr-input">
                                     <input type="text" name="area" id="registry-form__address-area">
@@ -147,7 +155,7 @@
                         </li>
                         <li class="registry-form__item">
                             <div class="registry-form__wr-address">
-                                <label for="registry-form__address-city">город</label>
+                                <label for="registry-form__address-city">город (населенный пункт)</label>
                                 <div class="registry-form__address-wr-input">
                                     <input class="modal-form-registry-required" type="text" name="city" id="registry-form__address-city">
                                 </div>
@@ -167,9 +175,9 @@
                                 </div>
                             </div>
                             <div class="registry-form__wr-address">
-                                <label for="">квартира</label>
+                                <label for="">квартира (офис)</label>
                                 <div class="registry-form__address-wr-input">
-                                    <input class="modal-form-registry-required" type="text" name="apartment" id="registry-form__address-apartment">
+                                    <input type="text" name="apartment" id="registry-form__address-apartment">
                                 </div>
                             </div>
                         </li>

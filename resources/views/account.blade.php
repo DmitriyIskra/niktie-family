@@ -67,6 +67,22 @@
                     <div class="data-item account__patronymic"></div>
                     <div class="data-item account__phone"></div>
                     <div class="data-item account__mail"></div>
+
+                    <ul class="user-data__address-list">
+                        <li class="user-data__address-item user-data__address-item_first">
+                            <div class="user-data__data user-data__data_index"></div>
+                            <div class="user-data__data user-data__data_area"></div>
+                            <div class="user-data__data user-data__data_district"></div>
+                        </li>
+                        <li class="user-data__address-item user-data__address-item_second">
+                            <div class="user-data__data user-data__data_city"></div>
+                            <div class="user-data__data user-data__data_street"></div>
+                            <div class="user-data__data-numbers">
+                                <div class="user-data__data user-data__data_house"></div>
+                                <div class="user-data__data user-data__data_apartment"></div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="up-cheque">
@@ -94,7 +110,7 @@
                         <div class="up-cheque__wr-preview">
                             <div class="up-cheque__preview-wr-close">
                                 <div class="up-cheque__preview-close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
                                         <g clip-path="url(#clip0_3031_1566)">
                                             <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
                                             <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
@@ -289,6 +305,109 @@
                             <p class="exchange__price">1 пачка чая = 1 балл</p>
                         </div>
                     </div>
+
+                    <!-- класс активации - exchange__modal-wrapper_active -->
+                    <div class="exchange__modal-wrapper">
+                        <!-- класс активации самой модалки -  exchange__modal_active -->
+                        <div class="exchange__modal-confirm">
+                            <div class="exchange__modal-wr-close">
+                                <div class="exchange__modal-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                                        <g clip-path="url(#clip0_3031_1566)">
+                                            <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                            <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3031_1566">
+                                                <rect width="30" height="30" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+    
+                            <div class="exchange__modal-confirm-wr-title">
+                                <h1 class="exchange__modal-confirm-title">
+                                    Подтвердите Ваш адрес доставки:
+                                </h1>
+                            </div>
+    
+                            <div class="exchange__modal-confirm-wr-address">
+                                <div class="exchange__modal-confirm-address"></div>
+                            </div>
+    
+                            <div class="exchange__modal-confirm-wr-submit">
+                                <div class="exchange__modal-button-back exchange__modal-confirm-submit">
+                                    <button type="button">подтвердить</button>
+                                </div>
+                            </div>
+    
+                            <div class="exchange__modal-confirm-wr-change">
+                                <div class="exchange__modal-button-back exchange__modal-confirm-change">
+                                    <button type="button">изменить адрес</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exchange__modal-change">
+                            <div class="exchange__modal-wr-close">
+                                <div class="exchange__modal-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                                        <g clip-path="url(#clip0_3031_1566)">
+                                            <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                            <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3031_1566">
+                                                <rect width="30" height="30" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="exchange__modal-change-address-list">
+                                <div class="exchange__modal-change-address-item">
+                                    <div class="exchange__modal-change-address-wr">
+                                        <input type="text" class="exchange__modal-change-index" value="Адрес 123">
+                                    </div>
+                                </div>
+                                <div class="exchange__modal-change-address-item">
+                                    <div class="exchange__modal-change-address-wr">
+                                        <input type="text" class="exchange__modal-change-area" value="Адрес 123">
+                                    </div>
+                                    <div class="exchange__modal-change-address-wr">
+                                        <input type="text" class="exchange__modal-change-district" value="Адрес 123">
+                                    </div>
+                                </div>
+                                <div class="exchange__modal-change-address-item">
+                                    <div class="exchange__modal-change-address-wr">
+                                        <input type="text" class="exchange__modal-change-city" value="Адрес 123">
+                                    </div>
+                                    <div class="exchange__modal-change-address-wr">
+                                        <input type="text" class="exchange__modal-change-street" value="Адрес 123">
+                                    </div>
+                                </div>
+                                <div class="exchange__modal-change-address-item">
+                                    <div class="exchange__modal-change-address-wr">
+                                        <input type="text" class="exchange__modal-change-house" value="Адрес 123">
+                                    </div>
+                                    <div class="exchange__modal-change-address-wr">
+                                        <input type="text" class="exchange__modal-change-apartment" value="Адрес 123">
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <div class="exchange__modal-change-wr-buttons">
+                                <div class="exchange__modal-button-back exchange__modal-confirm-save">
+                                    <button type="button">сохранить</button>
+                                </div>
+                                <div class="exchange__modal-button-back exchange__modal-confirm-cancel">
+                                    <button type="button">отмена</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -372,7 +491,7 @@
             <div class="api-res__content">
                 <div class="api-res__content-icon"></div>
                 <div class="api-res__content-wr-text">
-                    <p class="api-res__content-text api-res__content-text_lottery">Вы стали участником розыгрыша!</p>                
+                    <p class="api-res__content-text api-res__content-text_lottery">После обмена баллов <br> Вы стали участником розыгрыша!</p>                
                     <p class="api-res__content-text api-res__content-text_no-enough">Для этого заказа у Вас не хватает баллов.</p>                
                     <p class="api-res__content-text api-res__content-text_success">Ваш запрос успешно отправлен. Менеджер с Вами свяжется.</p>                
                     <p class="api-res__content-text api-res__content-text_fail-send">Проблема с соединением, попробуйте еще.</p>                

@@ -13,7 +13,6 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
 
         this.click = this.click.bind(this);
         this.change = this.change.bind(this);
-        this.submit = this.submit.bind(this);
         this.drop = this.drop.bind(this);
     }
 
@@ -29,8 +28,6 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
     registerEvents() { 
         this.d.cheque.addEventListener('click', this.click);
         this.d.loadButton.addEventListener('change', this.change);
-        // this.d.form.addEventListener('submit', this.submit);
-        this.d.previewClose.addEventListener('click', this.click);
 
         this.dropZone.addEventListener('dragenter', e => e.preventDefault());
         this.dropZone.addEventListener('dragover', e => e.preventDefault());
@@ -71,9 +68,10 @@ export default class ControllAccNewCheque extends ModalInfoExchange {
             const el = e.target.closest('.exchange__extraction-button-back');
             this.d.clickExchange(el);
         } 
-
-        if(e.target.closest('.up-cheque__preview-wr-close')) {
+        
+        if(e.target.closest('.up-cheque__preview-close')) {
             this.d.hidePreview();
+            this.d.clearResultAdd();
             this.files = [];
         }
 
