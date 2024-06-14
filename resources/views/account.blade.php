@@ -366,37 +366,37 @@
                                 </div>
                             </div>
 
-                            <ul class="exchange__modal-change-address-list">
+                            <form class="exchange__modal-change-address-list" name="changeAddress">
                                 <div class="exchange__modal-change-address-item">
                                     <div class="exchange__modal-change-address-wr">
-                                        <input type="text" class="exchange__modal-change-index" value="Адрес 123">
+                                        <input type="text" class="exchange__modal-change-index" name="index">
                                     </div>
                                 </div>
                                 <div class="exchange__modal-change-address-item">
                                     <div class="exchange__modal-change-address-wr">
-                                        <input type="text" class="exchange__modal-change-area" value="Адрес 123">
+                                        <input type="text" class="exchange__modal-change-area" name="area">
                                     </div>
                                     <div class="exchange__modal-change-address-wr">
-                                        <input type="text" class="exchange__modal-change-district" value="Адрес 123">
+                                        <input type="text" class="exchange__modal-change-district" name="district">
                                     </div>
                                 </div>
                                 <div class="exchange__modal-change-address-item">
                                     <div class="exchange__modal-change-address-wr">
-                                        <input type="text" class="exchange__modal-change-city" value="Адрес 123">
+                                        <input type="text" class="exchange__modal-change-city" name="city">
                                     </div>
                                     <div class="exchange__modal-change-address-wr">
-                                        <input type="text" class="exchange__modal-change-street" value="Адрес 123">
+                                        <input type="text" class="exchange__modal-change-street" name="street">
                                     </div>
                                 </div>
                                 <div class="exchange__modal-change-address-item">
                                     <div class="exchange__modal-change-address-wr">
-                                        <input type="text" class="exchange__modal-change-house" value="Адрес 123">
+                                        <input type="text" class="exchange__modal-change-house" name="house">
                                     </div>
                                     <div class="exchange__modal-change-address-wr">
-                                        <input type="text" class="exchange__modal-change-apartment" value="Адрес 123">
+                                        <input type="text" class="exchange__modal-change-apartment" name="apartment">
                                     </div>
                                 </div>
-                            </ul>
+                            </form>
 
                             <div class="exchange__modal-change-wr-buttons">
                                 <div class="exchange__modal-button-back exchange__modal-confirm-save">
@@ -465,6 +465,28 @@
                                     </svg>
                                 </div>
                             </div>
+
+                            <!-- chequebook__wr-zoom_active -- класс активации zoom -->
+                            <div class="chequebook__wr-zoom">
+                                <div class="chequebook__wr-close-zoom">
+                                    <div class="chequebook__close-zoom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                                            <g clip-path="url(#clip0_3167_1396)">
+                                                <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                                <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3167_1396">
+                                                    <rect width="30" height="30" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="chequebook__wr-image-zoom">
+                                    <img src="#" class="chequebook__img-zoom"></img>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -479,8 +501,9 @@
        --- === МАЛЕНЬКИЕ ИНФОРМАЦИОННЫЕ МОДАЛКИ === --- 
                  для класса "api-res__wrapper"
 
-        api-res__wrapper_active - активация api-res
+        api-res__wrapper_active - активация api-res -> подключается к api-res__wrapper
         --------------------------------------------
+        -- классы ниже подключаются к api-res__wrapper и меняют содержимое
         api-res__lottery - Вы стали участником розыгрыша!
         api-res__no-enough - Для этого заказа у Вас не хватает баллов.
         api-res__success - Ваш запрос успешно отправлен. Менеджер с Вами свяжется.

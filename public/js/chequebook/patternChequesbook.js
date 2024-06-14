@@ -6,13 +6,13 @@ export default class PatternChequesbook {
     /**создает элемент с картинкой чека**/ 
     createCheque(paths) {
         const elements = paths.map(item => {
-            const div = this.element('div', ['chequebook__cheque-item']);
+            const li = this.element('li', ['chequebook__cheque-item']);
     
             const img = this.element('img', ['chequebook__cheque-img'], item);
     
-            div.append(img);
+            li.append(img);
     
-            return div;
+            return li;
         })
 
         return elements;

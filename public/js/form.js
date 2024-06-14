@@ -26,7 +26,7 @@ function CurrentAuthorizeCheck(){
         "timeout": 0,
         "async": false
     };
-
+ 
     $.ajax(settings).done(function (response) {
         a = response;
     });
@@ -75,17 +75,6 @@ function authorize() {
             "password": password.value
         })
 
-        console.log(data)
-        // var settings = {
-        //     "url": "/api/auth/login",
-        //     "method": "POST",
-        //     "timeout": 0,
-        //     "headers": {
-        //         "Content-Type": "application/json",
-        //     },
-        //     "data": data
-        // };
-
         const res = await fetch("/api/auth/login", {
           method: 'POST',
           headers: {
@@ -97,7 +86,7 @@ function authorize() {
         const result = await res.json()
 
         if(result.is_auth) {
-          console.log(document.cookie = `niktea_session=${result.auth_token}`)
+          document.cookie = `niktea_session=${result.auth_token}`;
           window.location.href = "/account";
         } else {
           name.nextElementSibling.textContent = 'Не правильный логин или пароль';

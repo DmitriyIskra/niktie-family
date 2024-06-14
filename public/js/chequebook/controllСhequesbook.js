@@ -13,8 +13,8 @@ export default class ControllСhequesbook {
         this.registerEvents();
     }
 
-    registerEvents() {
-        this.d.pagination.addEventListener('click', this.click);
+    registerEvents() { 
+        this.d.book.addEventListener('click', this.click);
     }
 
     click(e) {
@@ -28,6 +28,14 @@ export default class ControllСhequesbook {
 
         if(e.target.closest('.chequebook__pagination-item')) {
             this.d.num(e.target);
+        }
+
+        if(e.target.closest('.chequebook__cheque-item')) {
+            this.d.openZoom(e.target);
+        }
+
+        if(e.target.closest('.chequebook__close-zoom')) {
+            this.d.closeZoom();
         }
     }
 }

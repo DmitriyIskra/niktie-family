@@ -27,6 +27,8 @@
     background-color: #fff;
     border-radius: 1.56vw;
     border: 1px solid #00BD8D;
+
+    cursor: pointer;
 }
 
 .chequebook__cheque-item img {
@@ -87,6 +89,69 @@
     display: block;
 }
 
+.chequebook__wr-zoom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.chequebook__wr-zoom_active {
+    display: block;
+}
+
+.chequebook__wr-close-zoom {
+    display: flex;
+    padding-top: 2.60vw;
+    padding-right: 2.60vw;
+
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.chequebook__close-zoom {
+    height: 1.56vw;
+    width: 1.56vw;
+}
+
+.chequebook__wr-image-zoom{
+    --duration : 0.4s;
+}
+
+.chequebook__wr-image-zoom {
+    position: absolute;
+
+    border-radius: 5%;
+    background-color: aliceblue;
+    box-shadow: 5px 15px 20px 0px rgba(0, 0, 0, 0.32);
+
+    transition: 
+     height var(--duration) linear,
+     width var(--duration) linear,
+     top var(--duration) linear,
+     left var(--duration) linear, 
+     border-radius var(--duration) linear,
+     transform var(--duration) linear;
+}
+
+.chequebook__wr-image-zoom_animate {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%)  scale(3);
+}
+
+.chequebook__wr-image-zoom img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
 @media(max-width: 1200px) {
     .chequebook {
         margin-top: 6.93vw;
@@ -143,68 +208,18 @@
 }
 
 @media(max-width: 1200px) {
-
+    .chequebook__close-zoom {
+        height: 6.56vw;
+        width: 6.56vw;
+    }
 }
 
 @media(max-width: 1200px) {
-
+    .chequebook__wr-image-zoom_animate {
+        transform: translate(-50%, -50%)  scale(2.2);
+    }
 }
 
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 1200px) {
-
-}
 
 
 

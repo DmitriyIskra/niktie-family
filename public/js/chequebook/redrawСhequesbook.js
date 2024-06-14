@@ -9,6 +9,10 @@ export default class RedrawСhequesbook {
         this.arrowPrev = this.book.querySelector('.chequebook__arrow-prev');
         this.arrowNext = this.book.querySelector('.chequebook__arrow-next');
 
+        this.zoom = this.book.querySelector('.chequebook__wr-zoom');
+        this.wrImgZoom = this.book.querySelector('.chequebook__wr-image-zoom')
+        this.imgZoom = this.book.querySelector('.chequebook__img-zoom')
+
         this.cheques = [];
 
         this.update = this.update.bind(this);
@@ -85,7 +89,7 @@ export default class RedrawСhequesbook {
         this.rightPag = this.paginationList.children[2];
     }
 
-    /**
+    /** 
      * используется только при добавлении чеков
      * (без обращения на сервер)
      * **/
@@ -169,5 +173,36 @@ export default class RedrawСhequesbook {
         this.textPag = +this.activePag.textContent;
 
         this.renderCheque(this.indexPag);
+    }
+
+    openZoom(el) {
+        const src = el.src;
+        const top = el.getBoundingClientRect().top + 'px';
+        const left = el.getBoundingClientRect().left + 'px';
+        const height = el.offsetHeight;
+        const width = el.offsetWidth;
+
+        this.zoom.classList.add('chequebook__wr-zoom_active');
+
+        this.wrImgZoom.style.top = top;
+        this.wrImgZoom.style.left = left;
+        this.wrImgZoom.style.height = height + 'px';
+        this.wrImgZoom.style.width = width + 'px';
+        this.imgZoom.src = src;
+
+        setTimeout(() => {
+            this.wrImgZoom.classList.add('chequebook__wr-image-zoom_animate');
+        })
+    }
+
+    closeZoom() {
+        this.zoom.classList.remove('chequebook__wr-zoom_active');
+
+        this.wrImgZoom.style.top = '';
+        this.wrImgZoom.style.left = '';
+        this.wrImgZoom.style.height = '';
+        this.wrImgZoom.style.width = '';
+        this.imgZoom.src = '#';
+        this.wrImgZoom.classList.remove('chequebook__wr-image-zoom_animate');
     }
 }

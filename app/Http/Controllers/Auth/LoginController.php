@@ -34,6 +34,6 @@ class LoginController extends Controller
         }
         //return redirect()->route('main', ['response' => $response, "code" => $code]);
 
-        return response()->json($response, $code);
+        return response()->json($response, $code); 
     }
 }

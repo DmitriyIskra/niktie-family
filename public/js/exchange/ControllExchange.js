@@ -39,9 +39,20 @@ export default class ControllExchange {
             this.d.hideModal();
         }
 
-        /**открываем модалку смены адреса**/ 
+        /**открываем модалку смены адреса, кнопка для модалки смены адреса**/ 
         if(e.target.closest('.exchange__modal-confirm-change')) {
-            
+            this.d.showChangeModal();
+        }
+
+        /**сохранение нового адреса, кнопка сохранить в модалке смены адреса**/ 
+        if(e.target.closest('.exchange__modal-confirm-save')) {
+            this.d.saveNewAddress();
+            this.d.showConfirmModal();
+        }
+
+        /**отмена ввода нового адреса, кнопка отмена в модалке смены адреса**/ 
+        if(e.target.closest('.exchange__modal-confirm-cancel')) {
+            this.d.showConfirmModal();
         }
 
         /**закрыть модалку для подтверждения или корректировки адреса**/

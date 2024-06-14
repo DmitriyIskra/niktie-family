@@ -8,10 +8,13 @@ export default class RedrawExchange extends ModalInfoExchange {
 
         this.wrapperModal = this.el.querySelector('.exchange__modal-wrapper');
 
+        // модальное окно подтвердить и поле для адреса
         this.modalConfirm = this.el.querySelector('.exchange__modal-confirm');
         this.addressConfirm = this.el.querySelector('.exchange__modal-confirm-address');
 
+        // модальное окно изменить адрес
         this.modalChange = this.el.querySelector('.exchange__modal-change');
+        this.modalChangeForm = this.modalChange.querySelector('form');
 
         // баллы выбранного подарка
         this.costPoints = null;
@@ -63,9 +66,37 @@ export default class RedrawExchange extends ModalInfoExchange {
          * При выходе из аккаунта sessionStorage очищается**/ 
     }
 
+    showChangeModal() {
+        // если другое окно открыто (смена адреса), оно закроется
+        this.hideModal();
+
+        this.activeModal = this.modalChange;
+        this.activeModal.classList.add('exchange__modal_active');
+
+        this.modalChangeForm.index.value = this.address.index;
+        this.modalChangeForm.area.value = this.address.area;
+        this.modalChangeForm.district.value = this.address.district;
+        this.modalChangeForm.city.value = this.address.city;
+        this.modalChangeForm.street.value = this.address.street;
+        this.modalChangeForm.house.value = this.address.house;
+        this.modalChangeForm.apartment.value = this.address.apartment;
+    }
+
+    // сохранение нового адреса доставки
+    saveNewAddress() {
+        this.address.index = this.modalChangeForm.index.value;
+        this.address.area = this.modalChangeForm.area.value;
+        this.address.district = this.modalChangeForm.district.value;
+        this.address.city = this.modalChangeForm.city.value;
+        this.address.street = this.modalChangeForm.street.value;
+        this.address.house = this.modalChangeForm.house.value;
+        this.address.apartment = this.modalChangeForm.apartment.value;
+    }
+
     hideModal() {
         if(this.activeModal) {
-            this.activeModal.classList.remove('exchange__modal-wrapper_active');
+            this.activeModal.classList.remove('exchange__modal_active');
+            this.activeModal = null;
         };
     }
 
