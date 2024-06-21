@@ -908,7 +908,7 @@ ul.breadcrumbs__item li+li:before {
 h1 {
   color: #FFF;
 font-family: 'Arsenal';
-font-size: 64px;
+font-size: 50px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -1001,14 +1001,14 @@ line-height: normal;
 .recepies__button {
   position: relative;
   font-family: 'Arsenal';  
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
   text-transform: uppercase;    
   border-radius: 50px;      
-  width: 445px;
-  height: 70px;
+  width: 300px;
+  height: 60px;
   border: none;      
   background: #53A894;
   color: #FFF;
@@ -1043,7 +1043,7 @@ h2 {
   color: #FFF;
 text-align: center;
 font-family: 'Arsenal';
-font-size: 64px;
+font-size: 50px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;

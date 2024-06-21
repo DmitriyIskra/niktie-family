@@ -24,7 +24,7 @@
 .trainings-page__title {
     font-family: 'Snell Roundhand';
     font-weight: 600;
-    font-size: 5vw;
+    font-size: 3.65vw;
     font-style: normal;
     text-align: center;
 
@@ -33,7 +33,7 @@
 
 .trainings-page__wr-title p {
     position: absolute;
-    bottom: -15%;
+    bottom: -30%;
     right: 0;
 
     font-family: 'Arsenal';
@@ -111,7 +111,7 @@
 
 .course-plan__title {
     font-family: 'Arsenal';
-    font-size: 2.86vw;
+    font-size: 2.60vw;
     font-weight: 700;
 
     color: #fff;
@@ -136,7 +136,7 @@
 
 .course-plan__card-title {
     font-family: 'Arsenal';
-    font-size: 2.86vw;
+    font-size: 2.6vw;
     font-weight: 700;
     text-align: center;
 
@@ -216,8 +216,8 @@
 
 .trainings-page__nearest-date {
     display: flex;
-    width: 35.10vw;
-    height: 6.15vw;
+    width: 25.05vw;
+    height: 5.31vw;
     margin: 0 auto;
 
     border-radius: 1.04vw;
@@ -233,7 +233,7 @@
     margin-bottom: 0;
 
     font-family: 'Arsenal';
-    font-size: 1.88vw;
+    font-size: 1.25vw;
     font-weight: 700;
     text-align: center;
 
@@ -257,7 +257,7 @@
 
 @media(max-width: 996px) {
     .trainings-page__title {
-        font-size: 12.80vw;
+        font-size: 10.67vw;
     }
 }
 

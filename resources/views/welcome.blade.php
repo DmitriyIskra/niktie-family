@@ -80,24 +80,24 @@
     <div class="main-page__container">
 
 
-        <h1>Как принять участие в розыгрыше?</h1>
+        <h1>Как получить гарантированные подарки?</h1>
 
         <section class="rules__action">
 
             <div class="rules__item">
                 <div class="rules__item-wrap">
                     <img class="rules__item--img" src="img/content/basket-prize.png" alt="Basket">
-                    <span class="rules__item--text">Купите промо-пачку чая Niktea<br>
-              в удобном для вас розничном<br>
-              или интернет-магазине</span>
+                    <span class="rules__item--text">Купите пачку чая NIktea в<br>
+                    удобном для вас розничном<br>
+                    или интернет-магазине.</span>
                 </div>
             </div>
             <div class="rules__item">
                 <div class="rules__item-wrap">
                     <img class="rules__item--img" src="img/content/registry-comp.png" alt="Registry">
                     <span class="rules__item--text">
-              Зарегистрируйте код и чек<br>
-              на сайте в личном кабинете</span>
+                    Зарегистрируйте чек<br>
+                    на сайте в личном кабинете</span>
                 </div>
             </div>
 
@@ -105,7 +105,7 @@
                 <div class="rules__item-wrap">
                     <img class="rules__item--img" src="img/content/tea-cup.png" alt="">
                     <span class="rules__item--text">
-              Выпейте вкусного<br> горячего чая NIKTEA</span>
+                    Копите баллы и<br>обменивайте на подарки<br><span style="color: #FFF500;">1 пачка чая = 1 балл</span></span>
                 </div>
             </div>
 
@@ -113,8 +113,8 @@
                 <div class="rules__item-wrap rules__item-wrap_last">
                     <img class="rules__item--img rules__item--img_last" src="img/content/man-icon.png" alt="">
                     <span class="rules__item--text">
-              Ждите результаты <br>
-              розыгрыша</span>
+                    Ожидайте выбранные<br>
+                    подарки</span>
                 </div>
             </div>
 
@@ -141,7 +141,7 @@
                     <div class="testSlider roundSlider">
 
                         <section class="wr-slider-content">
-                            <h2>ВСЕ ПРИЗЫ</h2>
+                            <h2>ВЫ МОЖЕТЕ ВЫБРАТЬ:</h2>
 
                             <div class="active-slide__description"></div>
 
@@ -485,7 +485,7 @@
                     </ul>
                 </div>
 
-                <div class="more-detailed__wr-content more-detailed__wr-content-lottery more-detailed__wr-content_active">
+                <div class="more-detailed__wr-content more-detailed__wr-content-lottery">
                     <ul class="more-detailed__content-list more-detailed__content-lottery">
                         <li class="more-detailed__content-item">
                             <div class="more-detailed__wr-title">

@@ -35,7 +35,7 @@
 
     text-align: center;
     font-family: 'Arsenal';
-    font-size: 64px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: 0.8;
@@ -64,7 +64,7 @@
 
 .user__wr-balance p {
     font-family: 'Arsenal';
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
@@ -446,7 +446,7 @@
 
 .exchange__title {
     font-family: 'Arsenal';
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
@@ -500,7 +500,7 @@
 
 .exchange__extraction-text {
     font-family: 'Arsenal';
-    font-size: 1.25vw;
+    font-size: 1.04vw;
     font-style: normal;
     font-weight: 400;
 
@@ -536,7 +536,7 @@
 
 .exchange__extraction-button-text {
     font-family: 'Arsenal';
-    font-size: 1.25vw;
+    font-size: 0.94vw;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
@@ -1006,7 +1006,7 @@ h1 {
 .wr-button-exit {
     display: flex;
     width: 128px;
-    height: 60px;
+    height: 50px;
     margin-right: 53px;
 
     background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));
@@ -1021,13 +1021,13 @@ h1 {
         top: 30px;
         right: 30px; */
 
-    width: 124px;
-    height: 56px;
+    width: 126px;
+    height: 46px;
     padding: 0;
     box-sizing: border-box;
 
     font-family: 'Arsenal';
-    font-size: 28px;
+    font-size: 20px;
 
     /* border: 0; */
     border-radius: 50px;

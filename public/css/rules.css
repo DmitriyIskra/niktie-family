@@ -82,7 +82,7 @@
 
 .rules__head h1{  
     font-family: 'Snell Roundhand';
-    font-size: 5vw;
+    font-size: 3.65vw;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -156,7 +156,8 @@
 
 @media (max-width: 991px) {
     .rules__head h1{
-        font-size: 48px;
+        font-size: 40px !important;
+        line-height: initial;
     }
 }
 

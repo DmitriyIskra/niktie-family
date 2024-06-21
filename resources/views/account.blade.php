@@ -417,34 +417,6 @@
 
                         <h1>Ваши чеки</h1>
 
-                        <!-- <div class="check__slider-container">
-                            <div class="slider-button-prev account__slider-check-arrow" tabindex="0" role="button"></div>
-
-                            <div class="swiper checkSlider account__slider-check">
-
-                                <div class="swiper-wrapper checkSlides account__slider-check-wrapper">
-                                    
-                                </div>
-
-                            </div> 
-
-                            <div class="slider-button-next account__slider-check-arrow account__slider-check-arrow_active" tabindex="0" role="button"></div>
-
-                        </div>
-                        <div class="pagination__container">
-                            <div class="pagination-prev account__pagination-arrow pagination-prev--check">
-                                <img src="{{ asset('img/icons/pagination-arrow-left.svg') }}" class="account__pag-arrow-img" alt="pagination-arrow-left">
-                            </div>
-
-                            <div class="pagination">
-                                <div class="account__pagination-list"></div>
-                            </div>
-
-                            <div class="pagination-next account__pagination-arrow pagination-next--check">
-                                <img src="{{ asset('img/icons/pagination-arrow-right.svg') }}" class="account__pag-arrow-img" alt="pagination-arrow-right">
-                            </div>
-                        </div> -->
-
                         <div class="chequebook">
                             <ul class="chequebook__cheque-list">
 

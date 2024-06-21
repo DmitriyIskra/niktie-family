@@ -372,7 +372,7 @@ padding-left: 20px;
 padding-bottom: 3px;
 color: #FFF;
 font-family: 'Arsenal';
-font-size: 13px;
+font-size: 12px;
 font-style: normal;
 font-weight: 200;
 line-height: normal;
@@ -530,6 +530,8 @@ border-bottom: 1px solid rgba(255, 255, 255, 1);
     margin-bottom: 0.2vw;
 
     text-align: center;
+
+    color: #fff500;
 }
 
 .file-upload__group .invalid-feedback {
@@ -925,7 +927,7 @@ order: 1;
     }
 
     .reg-label--check {
-        font-size: 13px;
+        font-size: 11px;
         margin-bottom: 10px;
     }
  

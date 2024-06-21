@@ -186,7 +186,7 @@
                     <div class="file-upload__group file-upload__registry input__group" required>
 
                         <p class="reg-label reg-label--check file-upload__title">
-                            Загрузите, пожалуйста, чек (внимание, чек должен быть читабельным)
+                            Чтобы закончить регистрацию, обязательно загрузите чек, он должен быть читабельным
                         </p>
 
                         <div class="file-upload__back">
