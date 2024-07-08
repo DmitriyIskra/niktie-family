@@ -151,7 +151,8 @@ body[data-variant=error-page] {
   width: 100%;
   margin-bottom: 4.30vw;
 
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .links-partner__text {
@@ -1081,11 +1082,6 @@ text-transform: uppercase;
     line-height: normal;
 }
 
-.priz__item__text--big{
-  font-size: 6.40vw;
-  margin-bottom: 49px;
-}
-
 .priz__item__img {
   width: 100%;
 }
@@ -1243,12 +1239,12 @@ text-transform: uppercase;
   }
   
   .recepies__button {
-      width: 90%;
+      width: 64.35%;
       height: 50px;
       border-radius: 50px;
       color: #FFF;
       font-family: 'Arsenal';
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;

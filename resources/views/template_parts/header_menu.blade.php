@@ -22,7 +22,7 @@
                 <a href="#" class="header__link header__link-prizes">Подарки</a>
             </li>
             <li class='header__item header__item_account' data-bs-target='#exampleModalToggle' data-bs-toggle='modal'>
-                <a id="lkbuttonpc" class='header__link'>Личный кабинет</a>
+                <a href="#0" id="lkbuttonpc" class='header__link'>Личный кабинет</a>
             </li>
             <li class="close-mobile-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
@@ -37,7 +37,7 @@
 <a class="navbar-brand d-lg-none logo-mobile--wrap" href="/">
     <img src="{{ asset('img/icons/logo-mobile.svg') }}" alt="logo-mobile">
 </a>
-<a class="navbar-brand d-lg-none account-logo-mobile" id="mobileaccountbutton" data-bs-target='#exampleModalToggle' data-bs-toggle='modal'>
+<a href="#0" class="navbar-brand d-lg-none account-logo-mobile" id="mobileaccountbutton" data-bs-target='#exampleModalToggle' data-bs-toggle='modal'>
 </a>
 <script>
     var auther = CurrentAuthorizeCheck()

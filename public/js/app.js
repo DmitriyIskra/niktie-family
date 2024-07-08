@@ -4,6 +4,10 @@ import ControllSlHeaderMain from "./sliderHeaderMain/controllSlHeaderMain.js";
 import RedrawSlHeaderMain from "./sliderHeaderMain/redrawSlHeaderMain.js";
 import MobileSlHeaderMain from "./sliderHeaderMain/mobileSlHeaderMain.js";
 
+// Больше о подарках на главной
+import ControllMoreDetailed from "./more-detailed/ControllMoreDetailed.js";
+import RedrawMoreDetailed from "./more-detailed/RedrawMoreDetailed.js";
+
 // Блок с бонусами
 import ControllExchange from "./exchange/ControllExchange.js";
 import RedrawExchange from "./exchange/RedrawExchange.js";
@@ -41,6 +45,14 @@ window.addEventListener('load', () => {
     if(swiper__mainSL) {
         const mobileSlHeaderMain = new MobileSlHeaderMain(swiper__mainSL);
         mobileSlHeaderMain.initSlider();
+    }
+
+    // Больше о подарках на главной
+    const moreDetailed = document.querySelector('.more-detailed');
+    if(moreDetailed) {
+        const redraw = new RedrawMoreDetailed(moreDetailed);
+        const controll = new ControllMoreDetailed(redraw);
+        controll.init();
     }
 
     // Блок с бонусами

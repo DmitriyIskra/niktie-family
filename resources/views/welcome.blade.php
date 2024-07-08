@@ -79,7 +79,7 @@
 
     <div class="main-page__container">
 
-
+ 
         <h1>Как получить гарантированные подарки?</h1>
 
         <section class="rules__action">
@@ -122,7 +122,10 @@
 
         <div class="links-partner__wrapper">
             <p class="links-partner__text">
-                Промо-пачки можно купить на сайтах <a class="links-partner__link" href=" https://oasis-msk.ru/Paketirovannyj-tea-niktea-c-28_109_126.html" title="Oasis" target="_blank">Oasis</a>, <a class="links-partner__link" href="https://www.ozon.ru/brand/niktea-34988836/" title="Ozon" target="_blank">Ozon</a>, в магазинах О'Кей, гипермаркетах Глобус, Перекресток и других.
+                В акции участвуют порционный чай в <a class="links-partner__link" href="https://nikteaworld.com/catalog-pyramid.html" title="Чай в пирамидках Niktea" target="_blank">пирамидках</a> и <a class="links-partner__link" href="https://nikteaworld.com/catalog-dellipack-per-cup.html" title="Чай пакетированный Niktea" target="_blank">пакетированный</a> чай на чашку. 
+            </p>
+            <p class="links-partner__text">
+                Чай Вы можете купить на сайте нашего официального интернет-магазина <a class="links-partner__link" href=" https://oasis-msk.ru/Paketirovannyj-tea-niktea-c-28_109_126.html" title="Oasis" target="_blank" rel="nofollow">Oasis MSK</a>, <br> а также у наших партнеров: <a class="links-partner__link" href="https://www.ozon.ru/brand/niktea-34988836/" title="Ozon" target="_blank" rel="nofollow">Ozon</a>, Vprok, в магазинах Окей, Гипер Глобус, Перекресток и других.
             </p>
         </div>
 
@@ -147,122 +150,149 @@
 
                             <div class="slider slider_circle_10">
                                 <div class="slide__container">
-                                    <span class="slide__description">Сертификат на путешествие 300 000р</span>
-                                    <div class="slide-img--wrap slide-img--wrap-certif">
-                                        <img class="main-slide__img main-slide__img--light"
-                                             src="img/content/priz/certif.png"
+                                    <span class="slide__description">
+                                        <span class="slide__balls">68 баллов - </span>
+                                        <span>Коллекция чая NIKTEA в пирамидках (8 шт)</span>
+                                    </span>
+                                    <div class="slide-img--wrap">
+                                        <img class="main-slide__img"
+                                             src="img/content/bonuses-for-balls/bonus-68-balls.webp"
                                              alt="certif">
                                     </div>
                                 </div>
 
                                 <div class="slide__container">
-                                    <span class="slide__description">Планшет Apple iPad mini 256GB<br>
-                                    Цвет: Space Grey </span>
+                                    <span class="slide__description">
+                                        <span class="slide__balls">228 баллов - </span>
+                                        <span>Набор для китайской чайной церемонии, в сумке</span>
+                                    </span>
                                     <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/laptop.png" alt="laptop">
-                                    </div>
-                                </div>
-
-                                <div class="slide__container">
-                                    <span class="slide__description">Смартфон Apple iPhone 14 Pro 256GB<br>
-                                    Цвет: Deep Purple</span>
-                                    <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/phone-priz.png"
-                                             alt="phone-priz">
-                                    </div>
-                                </div>
-
-                                <div class="slide__container">
-                                    <span class="slide__description">Годовой запас чая Niktea<br>
-                                    24 упаковки (пакетированный), более 10 вкусов</span>
-                                    <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/niktea24.png" alt="niktea24">
-                                    </div>
-                                </div>
-
-                                <div class="slide__container">
-                                    <span class="slide__description">Умная колонка Яндекс Станция 2, с Алисой<br>
-                                    Цвет: Черный антрацит</span>
-                                    <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/alice.png" alt="alice">
-                                    </div>
-                                </div>
-
-                                <div class="slide__container">
-                                    <span class="slide__description">Чайник Bork K 703 CH<br>
-                                    Цвет: Champagne</span>
-                                    <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/teapot-priz.png"
-                                             alt="teapot-priz">
-                                    </div>
-                                </div>
-
-                                <div class="slide__container">
-                                    <span class="slide__description">Наушники Apple AirPods Pro (2 поколение)<br>
-                                    Цвет: Белый </span>
-                                    <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/headphones.png"
-                                             alt="headphones">
-                                    </div>
-                                </div>
-
-                                <div class="slide__container">
-                                    <span class="slide__description">Портативный аккумулятор Bork (L787)<br>
-                                    Цвет: Белый </span>
-                                    <div class="slide-img--wrap">
-                                        <img class="main-slide__img slide-acc-bork-img" src="img/content/priz/borkL787.png" alt="borkL787">
-                                    </div>
-                                </div>
-
-                                <div class="slide__container">
-                                    <span class="slide__description">Подарочный чайный набор Niktea<br>
-                                    (чай+кружка)</span>
-                                    <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/gift-set.png" alt="gift-set">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-228-balls.webp" alt="laptop">
                                     </div>
                                 </div>
 
                                 <div class="slide__container">
                                     <span class="slide__description">
-                                    Фен Dyson Supersonic (hd07)<br>
-                                    Цвет: Vinca Blue & Rose
+                                        <span class="slide__balls">73 баллов - </span>
+                                        <span>Зонт автомат</span>
                                     </span>
                                     <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/fan-priz.png" alt="fan-priz">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-73-balls.webp"
+                                             alt="phone-priz">
                                     </div>
                                 </div>
 
                                 <div class="slide__container">
-                                    <span class="slide__description">Электросамокат Bork L602<br>
-                                    Вес 13 кг и удобная складная конструкция</span>
+                                    <span class="slide__description">
+                                        <span class="slide__balls">94 баллов - </span>
+                                        <span>Френч-пресс, 1 л</span>
+                                    </span>
                                     <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/scooter.png" alt="scooter">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-94-balls.webp" alt="niktea24">
                                     </div>
                                 </div>
 
                                 <div class="slide__container">
-                                    <span class="slide__description">Консоль Sony PlayStation 5<br>
-                                    Blu-Ray Edition </span>
+                                    <span class="slide__description">
+                                        <span class="slide__balls">77 баллов - </span>
+                                        <span>Сумка-холодильник </span>
+                                    </span>
                                     <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/playstation.png"
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-77-balls.webp" alt="alice">
+                                    </div>
+                                </div>
+
+                                <div class="slide__container">
+                                    <span class="slide__description">
+                                        <span class="slide__balls">85 баллов - </span>
+                                        <span>Наша фирменная футболка Niktea</span>
+                                    </span>
+                                    <div class="slide-img--wrap">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-85-balls.webp"
+                                             alt="teapot-priz">
+                                    </div>
+                                </div>
+
+                                <div class="slide__container">
+                                    <span class="slide__description">
+                                        <span class="slide__balls">1045 баллов - </span>
+                                        <span>Беспроводной мини-пылесос Bork V515 </span>
+                                    </span>
+                                    <div class="slide-img--wrap">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-1045-1-balls.webp"
+                                             alt="headphones">
+                                    </div>
+                                </div>
+
+                                <div class="slide__container">
+                                    <span class="slide__description">
+                                        <span class="slide__balls">57 баллов - </span>
+                                        <span>Чайник для чая и сахарница с ложкой</span>
+                                    </span>
+                                    <div class="slide-img--wrap">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-57-balls.webp" alt="borkL787">
+                                    </div>
+                                </div>
+
+                                <div class="slide__container">
+                                    <span class="slide__description">
+                                        <span class="slide__balls">1045 баллов - </span>
+                                        <span>Яндекс станция 2, с Алисой (несколько цветов)</span>
+                                    </span>
+                                    <div class="slide-img--wrap">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-1045-2-slider-balls.webp" alt="gift-set">
+                                    </div>
+                                </div>
+
+                                <div class="slide__container">
+                                    <span class="slide__description">
+                                        <span class="slide__balls">364 баллов - </span>
+                                        <span> Термокружка HT500 or</span>
+                                    </span>
+                                    <div class="slide-img--wrap">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-364-balls.webp" alt="fan-priz">
+                                    </div>
+                                </div>
+
+                                <div class="slide__container">
+                                    <span class="slide__description">
+                                        <span class="slide__balls">789 баллов -</span>
+                                        <span>Рюкзак UAG STD</span>
+                                    </span>
+                                    <div class="slide-img--wrap">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-789-balls.webp" alt="scooter">
+                                    </div>
+                                </div>
+
+                                <div class="slide__container">
+                                    <span class="slide__description">
+                                        <span class="slide__balls">159 баллов -</span>
+                                        <span>Подарочный термос и 3 стаканчика  </span>
+                                    </span>
+                                    <div class="slide-img--wrap">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-159-balls.webp"
                                              alt="playstation">
                                     </div>
                                 </div>
 
                                 <div class="slide__container">
-                                    <span class="slide__description">Воздухоотчиститель Dyson (HP05)<br>
-                                    Pure Hot + Cool </span>
+                                    <span class="slide__description">
+                                        <span class="slide__balls">591 баллов -</span>
+                                        <span>Подарочная карта М.Видео или Технопарк на 10 000</span>
+                                    </span>
                                     <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/cleaner-priz.png"
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-591-balls.webp"
                                              alt="cleaner-priz">
                                     </div>
                                 </div>
 
                                 <div class="slide__container">
-                                    <span class="slide__description">Ноутбук Apple MacBook Air 13 M2, 16/256<br>
-                                    Цвет: Midnight</span>
+                                    <span class="slide__description">
+                                        <span class="slide__balls">146 баллов -</span>
+                                        <span>Чайник заварочный, 600 мл</span>
+                                    </span>
                                     <div class="slide-img--wrap">
-                                        <img class="main-slide__img" src="img/content/priz/notebbok.png" alt="notebbok">
+                                        <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-146-balls.webp" alt="notebbok">
                                     </div>
                                 </div>
 
@@ -282,14 +312,15 @@
 
         </section>
 
+        <!-- START СПИСОК ПРИЗОВ В POP-UP -->
         <div class="more-detailed">
             <div class="more-detailed__wr-button">
                 <div class="more-detailed__button-back-modal-on">
-                    <a href="#">подробнее</a>
+                    <span>подробнее о подарках</span>
                 </div>
             </div>
-            <!-- Для включения модалки класс more-detailed__modal_active -->
-            <div class="more-detailed__modal more-detailed__modal_active">
+            <!-- БОЛЬШЕ ДЕТАЛЕЙ Для включения модалки класс more-detailed__modal_active -->
+            <div class="more-detailed__modal">
 
                 <div class="more-detailed__wr-close">
                     <div class="more-detailed__close">
@@ -299,13 +330,15 @@
                         </svg>
                     </div>
                 </div>
-
+                <!--ТАБЫ для активации нужного more-detailed__tabs_active -->
                 <ul class="more-detailed__tabs-list">
-                    <li class="more-detailed__tabs-item more-detailed__tabs_active">Бонусная программа Niktea family</li>
-                    <li class="more-detailed__tabs-item">Призы для розыгрыша в бонусной программе</li>
+                    <li class="more-detailed__tabs-item more-detailed__tabs_active" data-type="bonus-prog">Бонусная программа Niktea family</li>
+                    <li class="more-detailed__tabs-item" data-type="lottery">Призы для розыгрыша в бонусной программе</li>
                 </ul>
-                <!-- Для включения нужного окна класс  more-detailed__wr-content_active -->
-                <div class="more-detailed__wr-content more-detailed__wr-content-bonus-prog">
+
+                <!-- START Окна со списком призов -->
+                <!-- активация more-detailed__wr-content_active -->
+                <div class="more-detailed__wr-content more-detailed__wr-content-bonus-prog more-detailed__wr-content_active">
                     <ul class="more-detailed__content-list more-detailed__content-bonus-prog">
                         <li class="more-detailed__content-item">
                             <div class="more-detailed__wr-title">
@@ -320,7 +353,7 @@
                                         <p class="more-detailed__bonus-prog-text">
                                             <span class="more-detailed__bonus-prog-amount-balls">30 баллов - </span>
                                             <span class="more-detailed__bonus-prog-desc">
-                                                тренинг по чаю 
+                                                Тренинг по чаю 
                                             </span>
                                             <span class="more-detailed__bonus-prog-desc-dop">(<span class="more-detailed__bonus-prog-desc-dop-color">От любителя до профессионала</span>)</span>
                                         </p>
@@ -329,40 +362,40 @@
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-58-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-57-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">58 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">чайник для чая и сахарница с ложкой</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">57 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Чайник для чая и сахарница с ложкой</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-63-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-68-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">63 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">коллекция чая NIKTEA в пирамидках (8 шт)</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">68 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Коллекция чая NIKTEA в пирамидках (8 шт)</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-71-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-73-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">71 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">сумка-холодильник</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">73 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Зонт автомат</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-76-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-77-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">76 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">зонт автомат</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">77 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Сумка-холодильник</span>
                                     </p>
-                                </li>
+                                </li> 
                             </ul>
                         </li>
                         <li class="more-detailed__content-item">
@@ -372,47 +405,47 @@
                             <ul class="more-detailed__bonus-prog-list">
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-91-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-85-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">91 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">наша фирменная футболка Niktea</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">85 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Наша фирменная футболка Niktea</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-95-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-94-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">95 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">френч-пресс, 1 л</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">94 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Френч-пресс, 1 л</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-139-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-146-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">139 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">подарочный термос и 3 стаканчика</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">146 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Чайник заварочный, 600 мл</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-207-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-159-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">207 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">чайник заварочный, 600 мл</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">159 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Подарочный термос и 3 стаканчика</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-245-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-228-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">245 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">набор для китайской чайной церемонии, в сумке</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">228 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Набор для китайской чайной церемонии, в сумке</span>
                                     </p>
                                 </li>
                             </ul>
@@ -424,46 +457,46 @@
                             <ul class="more-detailed__bonus-prog-list">
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-415-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-364-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">415 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">термокружка Bork HT600</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">364 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Термокружка Bork HT600</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-585-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-591-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">585 баллов - </span>
-                                        <span class="more-detailed__bonus-prog-desc">подарочная карта М.Видео или Технопарк на 10 000</span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">591 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-desc">Подарочная карта М.Видео или Технопарк на 10 000</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-795-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-789-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">795 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">789 баллов - </span>
                                         <span class="more-detailed__bonus-prog-desc">Рюкзак UAG STD</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-812-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-1045-1-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">812 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">1045 баллов - </span>
                                         <span class="more-detailed__bonus-prog-desc">Беспроводной мини-пылесос Bork V515</span>
                                     </p>
                                 </li>
                                 <li class="more-detailed__bonus-prog-item">
                                     <div class="more-detailed__bonus-prog-wr-image">
-                                        <img src="img/content/bonuses-for-balls/bonus-983-balls.webp" alt="Подарок по бонусной программе Niktie family">
+                                        <img src="img/content/bonuses-for-balls/bonus-1045-2-balls.webp" alt="Подарок по бонусной программе Niktie family">
                                     </div>
                                     <p class="more-detailed__bonus-prog-text">
-                                        <span class="more-detailed__bonus-prog-amount-balls">983 баллов - </span>
+                                        <span class="more-detailed__bonus-prog-amount-balls">1045 баллов - </span>
                                         <span class="more-detailed__bonus-prog-desc">Яндекс станция 2, с Алисой (несколько цветов)</span>
                                     </p>
                                 </li>
@@ -474,18 +507,18 @@
                     <ul class="more-detailed__buttons-list">
                         <li class="more-detailed__button-item">
                             <div class="more-detailed__button-back">
-                                <a href="#">подробнее об акции</a>
+                                <a href="/rules">подробнее об акции</a>
                             </div>
                         </li>
                         <li class="more-detailed__button-item">
-                            <div class="more-detailed__button-back">
+                            <div class="more-detailed__button-back more-detailed__to-account">
                                 <a href="#">личный кабинет</a>
                             </div>
                         </li>
                     </ul>
                 </div>
 
-                <div class="more-detailed__wr-content more-detailed__wr-content-lottery">
+                <div class="more-detailed__wr-content more-detailed__wr-content-lottery ">
                     <ul class="more-detailed__content-list more-detailed__content-lottery">
                         <li class="more-detailed__content-item">
                             <div class="more-detailed__wr-title">
@@ -593,92 +626,136 @@
                     <ul class="more-detailed__buttons-list">
                         <li class="more-detailed__button-item">
                             <div class="more-detailed__button-back">
-                                <a href="#">подробнее об акции</a>
+                                <a href="/rules">подробнее об акции</a>
                             </div>
                         </li>
                     </ul>
                 </div>
-
+                <!-- END Окна со списком призов -->
 
             </div>
         </div>
+        <!-- END СПИСОК ПРИЗОВ -->
 
         <div class="priz-mobile">
 
+            <h2 class="priz-mobile-title">вы можете выбрать</h2>
+
             <div class="priz__item">
-          <span class="priz__item__text priz__item__text--big">Главный подарок<br>
-            - сертификат на путешествие</span>
                 <img class="priz__item__img priz__item__img--layout" src="img/content/mobile/certif-mobile.png"
                      alt="certif-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
 
             <div class="priz__item">
-                <span class="priz__item__text">Macbook air m2<br>midnight</span>
                 <img class="priz__item__img" src="img/content/mobile/notebook.png" alt="notebook.png">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">Iphone 14 pro 256<br>deep purple</span>
                 <img class="priz__item__img" src="img/content/mobile/iphone.png" alt="iphone">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">Ipad mini 256 space<br>grey</span>
                 <img class="priz__item__img" src="img/content/mobile/ipad.png" alt="ipad">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
 
             <div class="priz__item">
-                <span class="priz__item__text">Очиститель воздуха<br>Dyson HP05</span>
                 <img class="priz__item__img" src="img/content/mobile/dyson.png" alt="dyson">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
 
             <div class="priz__item">
-                <span class="priz__item__text">Bork Электросамокат</span>
                 <img class="priz__item__img" src="img/content/mobile/scooter-mobile.png" alt="scooter-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
 
             <div class="priz__item">
-                <span class="priz__item__text">Sony Playstation 5</span>
                 <img class="priz__item__img" src="img/content/mobile/playstation-mobile.png" alt="playstation-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">Фен Dyson</span>
                 <img class="priz__item__img" src="img/content/mobile/fan-mobile.png" alt="fan-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">Портативный<br>аккумулятор Bork</span>
                 <img class="priz__item__img" src="img/content/mobile/bork-mobile.png" alt="bork-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">Яндекс станция 2<br>с Алисой</span>
                 <img class="priz__item__img" src="img/content/mobile/alice-mobile.png" alt="alice-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">Air Pods 2</span>
                 <img class="priz__item__img" src="img/content/mobile/airbods-mobile.png" alt="airbods-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">Чайник Bork</span>
                 <img class="priz__item__img" src="img/content/mobile/teapot-mobile.png" alt="teapot-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">300 подарочных наборов<br>Niktea</span>
                 <img class="priz__item__img" src="img/content/mobile/300.png" alt="300">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="priz__item">
-                <span class="priz__item__text">Годовой запас чая<br>Niktea</span>
                 <img class="priz__item__img" src="img/content/mobile/tea-mobile.png" alt="tea-mobile">
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls"></span>
+                    <span></span>
+                </div>
             </div>
 
 
