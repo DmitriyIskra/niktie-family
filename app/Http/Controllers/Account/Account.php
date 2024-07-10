@@ -18,7 +18,7 @@ class Account extends Controller
         $code = 403;
         if (Auth::check()) {
             $response["is_auth"] = True;
-            $response["user"] = Auth::user();
+            $response["user"] = Auth::user(); 
             $code = 200;
             $response["activated_codes"] = $this->get_activated_codes_provider(Auth::user()["id"]);
             $response["today_activated_codes"] = $this->get_codes_limit_provider(Auth::user()["id"]);

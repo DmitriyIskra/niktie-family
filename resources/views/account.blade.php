@@ -144,14 +144,35 @@
                     </div>  
 
                     <div class="exchange__wr-extraction">
+                        <div class="exchange__wr-level-title">
+                            <h2 class="exchange__level-title">Базовый уровень</h2>
+                        </div>
                         <ul class="exchange__extraction-list">
+                            <li class="exchange__extraction-item exchange__extraction-item_first">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/bonuses-for-balls/bonus-30-balls.webp" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text exchange__extraction-text_wr-dop">
+                                        <span>30 баллов - </span>тренинг по чаю <span class="exchange__extraction-text_color">“От любителя до профессионала”</span>
+                                        <span class="exchange__extraction-text-dop">(<span class="exchange__extraction-text-dop_color">проводится в Москве</span>)</span>
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button"> <!-- баллы к кнопке прикручиваются в data-points через js -->
+                                    <div class="exchange__extraction-button-back">
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-57-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>10 баллов</span> одиннадцатая пачка в подарок
+                                        <span>57 баллов - </span> чайник для чая и сахарница
                                     </p>
                                 </div>
                                 <div class="exchange__extraction-wr-button">
@@ -165,10 +186,10 @@
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-68-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>20 баллов</span> чайный набор (чай+кружка)
+                                        <span>68 баллов - </span> коллекция NIKTEA в пирамидках
                                     </p>
                                 </div>
                                 <div class="exchange__extraction-wr-button">
@@ -182,10 +203,10 @@
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-73-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>40 баллов</span> годовой запас чая
+                                        <span>73 баллов - </span> зонт автомат
                                     </p>
                                 </div>
                                 <div class="exchange__extraction-wr-button">
@@ -199,10 +220,33 @@
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-77-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>60 баллов</span> термокружка Bork
+                                        <span>77 баллов - </span> сумка-холодильник
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>                 
+                        </ul>
+
+                        <div class="exchange__wr-level-title">
+                            <h2 class="exchange__level-title">Серебрянный уровень</h2>
+                        </div>
+                        <ul class="exchange__extraction-list">
+                            <li class="exchange__extraction-item exchange__extraction-item_first">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/bonuses-for-balls/bonus-85-balls.webp" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>85 баллов - </span> фирменная футболка Niktea
                                     </p>
                                 </div>
                                 <div class="exchange__extraction-wr-button">
@@ -216,10 +260,10 @@
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-94-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>80 баллов</span> сертификат на электронику
+                                        <span>94 баллов - </span> френч-пресс, 1 л
                                     </p>
                                 </div>
                                 <div class="exchange__extraction-wr-button">
@@ -233,10 +277,10 @@
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-146-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>100 баллов</span> Яндекс станция 2, с Алисой
+                                        <span>146 баллов - </span> чайник заварочный, 600 мл
                                     </p>
                                 </div>
                                 <div class="exchange__extraction-wr-button">
@@ -250,10 +294,10 @@
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-159-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>125 баллов</span> чайник Bork
+                                        <span>159 баллов - </span> термос и 3 стаканчика
                                     </p>
                                 </div>
                                 <div class="exchange__extraction-wr-button">
@@ -267,10 +311,33 @@
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-228-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>150 баллов</span> Наушники Apple AirPods Pro
+                                        <span>228 баллов - </span> набор для чайной церемонии
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>                 
+                        </ul>
+
+                        <div class="exchange__wr-level-title">
+                            <h2 class="exchange__level-title">Золотой уровень</h2>
+                        </div>
+                        <ul class="exchange__extraction-list">
+                            <li class="exchange__extraction-item exchange__extraction-item_first">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/bonuses-for-balls/bonus-364-balls.webp" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>364 баллов - </span> термокружка Bork HT600
                                     </p>
                                 </div>
                                 <div class="exchange__extraction-wr-button">
@@ -284,13 +351,13 @@
                             <li class="exchange__extraction-item">
                                 <div class="exchange__extraction-descr">
                                     <div class="exchange__extraction-img">
-                                        <img src="img/content/exchange__prize-exemple.png" alt="extraction">
+                                        <img src="img/content/bonuses-for-balls/bonus-591-balls.webp" alt="extraction">
                                     </div>
                                     <p class="exchange__extraction-text">
-                                        <span>200 баллов</span> Фен Dyson Supersonic (hd07)
+                                        <span>591 баллов - </span> подарочная карта М.Видео или Технопарк на 10 000
                                     </p>
                                 </div>
-                                <div class="exchange__e=xtraction-wr-button">
+                                <div class="exchange__extraction-wr-button">
                                     <div class="exchange__extraction-button-back">
                                         <button type="button">
                                             <span class="exchange__extraction-button-text">обменять</span>
@@ -298,7 +365,57 @@
                                     </div>
                                 </div>
                             </li>
-                            
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/bonuses-for-balls/bonus-789-balls.webp" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>789 баллов - </span> рюкзак UAG STD
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/bonuses-for-balls/bonus-1045-1-balls.webp" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>1045 баллов - </span> беспроводной мини-пылесос Bork V515
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="exchange__extraction-item">
+                                <div class="exchange__extraction-descr">
+                                    <div class="exchange__extraction-img">
+                                        <img src="img/content/bonuses-for-balls/bonus-1045-2-balls.webp" alt="extraction">
+                                    </div>
+                                    <p class="exchange__extraction-text">
+                                        <span>1045 баллов - </span> яндекс станция 2, с Алисой
+                                    </p>
+                                </div>
+                                <div class="exchange__extraction-wr-button">
+                                    <div class="exchange__extraction-button-back">
+                                        <button type="button">
+                                            <span class="exchange__extraction-button-text">обменять</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>                 
                         </ul>
 
                         <div class="exchange__wr-price">
@@ -480,8 +597,9 @@
         api-res__no-enough - Для этого заказа у Вас не хватает баллов.
         api-res__success - Ваш запрос успешно отправлен. Менеджер с Вами свяжется.
         api-res__fail-send - Проблема с соединением, попробуйте еще.
+        api-res__cheque-success - Ваш чек успешно добавлен. Время проверки чека до 3 дней.
     -->
-    <div class="api-res__wrapper">
+    <div class="api-res__wrapper api-res__wrapper_active api-res__cheque-success">
         <div class="api-res__window">
             <div class="api-res__content">
                 <div class="api-res__content-icon"></div>
@@ -490,13 +608,14 @@
                     <p class="api-res__content-text api-res__content-text_no-enough">Для этого заказа у Вас не хватает баллов.</p>                
                     <p class="api-res__content-text api-res__content-text_success">Ваш запрос успешно отправлен. Менеджер с Вами свяжется.</p>                
                     <p class="api-res__content-text api-res__content-text_fail-send">Проблема с соединением, попробуйте еще.</p>                
+                    <p class="api-res__content-text api-res__content-text_cheque-success">Ваш чек успешно добавлен. <br> <span class="api-res__content-text_color">Время проверки чека до 3 дней.</span></p>                
                 </div>
                 <div class="api-res__content-wr-button">
                     <div class="api-res__content-button-back">
                         <a href="#0" title="Вы стали участником розыгрыша!">подробнее</a>
                     </div>
                 </div>
-            </div>
+            </div> 
             <div class="api-res__close">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
                     <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>

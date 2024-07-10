@@ -18,13 +18,13 @@ export default class ControllExchange {
         if(e.target.closest('.exchange__extraction-button-back')) {
             const el = e.target.closest('.exchange__extraction-button-back');
             const checkResult = this.d.checkPoints(el);
-
+console.log(el)
             // не хватает баллов
             if(!checkResult) {
                 this.d.openModalnoEnough();
                 return;
             }
-    
+     
             // хватает баллов
             this.d.showCoverModal();
             this.d.showConfirmModal();

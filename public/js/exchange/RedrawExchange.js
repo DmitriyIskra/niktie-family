@@ -82,7 +82,7 @@ export default class RedrawExchange extends ModalInfoExchange {
         this.modalChangeForm.apartment.value = this.address.apartment;
     }
 
-    // сохранение нового адреса доставки
+    // сохранение нового адреса доставки 
     saveNewAddress() {
         this.address.index = this.modalChangeForm.index.value;
         this.address.area = this.modalChangeForm.area.value;

@@ -7,6 +7,7 @@ export default class ModalInfoExchange {
                 noEnough : 'api-res__no-enough',
                 success : 'api-res__success',
                 failSend : 'api-res__fail-send',
+                chequeSuccess : 'api-res__cheque-success',
             }
         };
 
@@ -28,7 +29,7 @@ export default class ModalInfoExchange {
 
     // СОБЫТИЯ
 
-    modalClick(e) {
+    modalClick(e) { 
         if(e.target.closest('.api-res__close')) {
             this.unactivateModal();
         }
@@ -82,6 +83,13 @@ export default class ModalInfoExchange {
         this.setModalType('failSend');
     }
 
+    openModalСhequeSuccess() {
+        this.activateModal();
+        // указываем тип контента
+        this.setModalType('chequeSuccess');
+    }
+
+    // тип контента активирующийся в окне модалки
     setModalType(data) {
         this.modal.classList.add(this.state.type[data]);
     }

@@ -363,7 +363,7 @@
     visibility: hidden;
 }
 
-.file-type-error {
+.file-type-error { 
     padding-left: 8%;
 }
 
@@ -627,8 +627,8 @@ order: 1;
 .api-res__window {
     position: relative;
 
-    width: 36.46vw;
-    height: 31.25vw;
+    width: 18.23vw;
+    height: 15.63vw;
 
     border-radius: 1.56vw;
     background: no-repeat url('../img/leafs-pop-up-info-acc.webp') , no-repeat linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
@@ -638,12 +638,12 @@ order: 1;
 }
 
 .api-res__content {
-    margin-top: 9.17vw;
+    margin-top: 3.70vw;
 }
 
 .api-res__content-icon {
-    width: 6.77vw;
-    height: 6.77vw;
+    width: 4.69vw;
+    height: 4.69vw;
     margin: 0 auto;
 }
 
@@ -659,7 +659,7 @@ order: 1;
     background-size: contain;
 }
 
-.api-res__success .api-res__content-icon {
+.api-res__success .api-res__content-icon, .api-res__cheque-success .api-res__content-icon {
     background: no-repeat url('../img/icons/api-res__content-icon-success.png');
     background-position: center;
     background-size: contain;
@@ -667,7 +667,11 @@ order: 1;
 
 .api-res__content-wr-text {
     width: 100%;
-    margin-top: 1.46vw;
+    margin-top: 1.72vw;
+}
+
+.api-res__lottery .api-res__content-wr-text {
+    margin-top: 0.73vw;
 }
 
 .api-res__content-text {
@@ -676,13 +680,17 @@ order: 1;
     padding-bottom: 0;
 
     font-family: "Blogger Sans";
-    font-size: 32px;
+    font-size: 0.83vw;
     font-style: normal;
     font-weight: 700;
     line-height: 1;
     text-align: center;
 
     color: #fff;
+}
+
+.api-res__content-text_color {
+    color: #FFF500;
 }
 
 .api-res__lottery .api-res__content-text_lottery {
@@ -704,9 +712,14 @@ order: 1;
     width: 60%;
 }
 
+.api-res__cheque-success .api-res__content-text_cheque-success {
+    display: block;
+    width: 70%;
+}
+
 .api-res__content-wr-button {
     display: none;
-    margin-top: 2.08vw;
+    margin-top: 0.73vw;
 }
 
 .api-res__lottery .api-res__content-wr-button {
@@ -715,8 +728,8 @@ order: 1;
 
 .api-res__content-button-back {
     display: flex;
-    width: 15.63vw;
-    height: 3.13vw;
+    width: 10.26vw;
+    height: 2.34vw;
     margin: 0 auto;
     padding: 0.1vw;
 
@@ -734,7 +747,7 @@ order: 1;
     width: 100%;
 
     font-family: 'Arsenal';
-    font-size: 1.46vw;
+    font-size: 0.83vw;
     font-style: normal; 
     font-weight: 400;
     text-transform: uppercase;
@@ -750,8 +763,8 @@ order: 1;
 
 .api-res__close {
     position: absolute;
-    top: 4.2%;
-    right: 4.2%;
+    top: 6.2%;
+    right: 6.2%;
 
     width: 1.56vw;
     height: 1.56vw;

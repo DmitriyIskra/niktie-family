@@ -125,7 +125,7 @@
                 В акции участвуют порционный чай в <a class="links-partner__link" href="https://nikteaworld.com/catalog-pyramid.html" title="Чай в пирамидках Niktea" target="_blank">пирамидках</a> и <a class="links-partner__link" href="https://nikteaworld.com/catalog-dellipack-per-cup.html" title="Чай пакетированный Niktea" target="_blank">пакетированный</a> чай на чашку. 
             </p>
             <p class="links-partner__text">
-                Чай Вы можете купить на сайте нашего официального интернет-магазина <a class="links-partner__link" href=" https://oasis-msk.ru/Paketirovannyj-tea-niktea-c-28_109_126.html" title="Oasis" target="_blank" rel="nofollow">Oasis MSK</a>, <br> а также у наших партнеров: <a class="links-partner__link" href="https://www.ozon.ru/brand/niktea-34988836/" title="Ozon" target="_blank" rel="nofollow">Ozon</a>, Vprok, в магазинах Окей, Гипер Глобус, Перекресток и других.
+                Чай Вы можете купить на сайте нашего официального интернет-магазина <a class="links-partner__link" href=" https://oasis-msk.ru/Paketirovannyj-tea-niktea-c-28_109_126.html" title="Oasis" target="_blank" rel="nofollow">Oasis MSK</a>, <br> а также у наших партнеров: <a class="links-partner__link" href="https://www.ozon.ru/seller/alef-treyd-msk-6503/produkty-pitaniya-9200/niktea-34988836/?miniapp=seller_6503&opened=brand" title="Ozon" target="_blank" rel="nofollow">Ozon</a>, <a class="links-partner__link" href="https://www.vprok.ru/catalog/search?text=Niktea" title="Vprok" target="_blank" rel="nofollow">Vprok</a>, в магазинах Окей, Гипер Глобус, Перекресток и других.
             </p>
         </div>
 
@@ -216,7 +216,7 @@
                                 <div class="slide__container">
                                     <span class="slide__description">
                                         <span class="slide__balls">1045 баллов - </span>
-                                        <span>Беспроводной мини-пылесос Bork V515 </span>
+                                        <span>Беспроводной мини-пылесос Bork V515 </span>
                                     </span>
                                     <div class="slide-img--wrap">
                                         <img class="main-slide__img" src="img/content/bonuses-for-balls/bonus-1045-1-balls.webp"
@@ -642,119 +642,145 @@
             <h2 class="priz-mobile-title">вы можете выбрать</h2>
 
             <div class="priz__item">
-                <img class="priz__item__img priz__item__img--layout" src="img/content/mobile/certif-mobile.png"
-                     alt="certif-mobile">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-68-mobile-balls.webp" alt="certif-mobile">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <p class="priz-mobile-balls">68 баллов - </p>
+                    <p>Коллекция чая NIKTEA в пирамидках (8 шт)</p>
                 </div>
             </div>
 
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/notebook.png" alt="notebook.png">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-228-balls.webp" alt="notebook.png">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">228 баллов - </span>
+                    <span>Набор для китайской чайной церемонии, в сумке</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/iphone.png" alt="iphone">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-73-balls.webp" alt="ipad">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">73 баллов - </span>
+                    <span>Зонт автомат</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/ipad.png" alt="ipad">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-94-balls.webp" alt="iphone">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">94 баллов -</span>
+                    <span>Френч-пресс, 1 л</span>
                 </div>
             </div>
 
-
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/dyson.png" alt="dyson">
-                <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-77-balls.webp" alt="dyson">
                 </div>
-            </div>
-
-
-            <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/scooter-mobile.png" alt="scooter-mobile">
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">77 баллов -</span>
+                    <span>Сумка-холодильник</span>
                 </div>
             </div>
 
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/playstation-mobile.png" alt="playstation-mobile">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-85-balls.webp" alt="scooter-mobile">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">85 баллов -</span>
+                    <span>Наша фирменная футболка Niktea</span>
+                </div>
+            </div>
+
+
+            <div class="priz__item">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-1045-1-balls.webp" alt="playstation-mobile">
+                </div>
+                <div class="priz__item__text">
+                    <span class="priz-mobile-balls">1045 баллов -</span>
+                    <span>Беспроводной мини-пылесос Bork V515</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/fan-mobile.png" alt="fan-mobile">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-57-balls.webp" alt="fan-mobile">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">57 баллов -</span>
+                    <span>Чайник для чая и сахарница с ложкой</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/bork-mobile.png" alt="bork-mobile">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-1045-2-slider-balls.webp" alt="bork-mobile">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">1045 баллов -</span>
+                    <span>Яндекс станция 2, с Алисой (несколько цветов)</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/alice-mobile.png" alt="alice-mobile">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-364-balls.webp" alt="alice-mobile">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">364 баллов -</span>
+                    <span>Термокружка HT500 or</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/airbods-mobile.png" alt="airbods-mobile">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-789-balls.webp" alt="airbods-mobile">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">789 баллов -</span>
+                    <span>Рюкзак UAG STD</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/teapot-mobile.png" alt="teapot-mobile">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-159-balls.webp" alt="teapot-mobile">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">159 баллов -</span>
+                    <span>Подарочный термос и 3 стаканчика</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/300.png" alt="300">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-591-balls.webp" alt="300">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">591 баллов -</span>
+                    <span>Подарочная карта М.Видео или Технопарк на 10 000</span>
                 </div>
             </div>
 
             <div class="priz__item">
-                <img class="priz__item__img" src="img/content/mobile/tea-mobile.png" alt="tea-mobile">
+                <div class="priz__item-wr-image">
+                    <img class="priz__item__img" src="img/content/bonuses-for-balls/bonus-146-balls.webp" alt="tea-mobile">
+                </div>
                 <div class="priz__item__text">
-                    <span class="priz-mobile-balls"></span>
-                    <span></span>
+                    <span class="priz-mobile-balls">146 баллов -</span>
+                    <span>Чайник заварочный, 600 мл</span>
                 </div>
             </div>
 

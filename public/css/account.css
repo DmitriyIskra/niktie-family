@@ -16,7 +16,7 @@
 
 .code__group {
     width: 68.1%;
-    margin-top: 1.3vw;
+    margin-top: 3.91vw;
 }
 
 .user-account {
@@ -455,7 +455,7 @@
 }
 
 .exchange__wr-extraction {
-    width: 44.48vw;
+    width: 50vw;
     margin-top: 2.29vw;
     padding-bottom: 1.6vw;
 
@@ -463,19 +463,37 @@
     background: rgba(255, 255, 255, 0.50);
 }
 
+.exchange__wr-level-title {
+    padding-top: 0.78vw;
+    padding-bottom: 1.04vw;
+}
+
+.exchange__level-title {
+    font-family: 'Arsenal';
+    font-size: 1.46vw;
+    font-weight: 700;
+    text-align: center;
+
+    color: #FFF500;
+}
+
 .exchange__extraction-list {
-    padding-top: 0.42vw;
     padding-right: 2.45vw;
     padding-left: 2.45vw;
 }
 
 .exchange__extraction-item {
     display: flex;
-    padding-top: 0.63vw;
+    padding-top: 0.43vw;
+    padding-bottom: 0.15vw;
 
     border-bottom: 1px solid #fff;
 
     justify-content: space-between;
+}
+
+.exchange__extraction-item_first {
+    border-top: 1px solid #fff;
 }
 
 .exchange__extraction-descr {
@@ -488,6 +506,12 @@
 .exchange__extraction-img {
     height: 2.97vw;
     width: 2.97vw;
+
+    border-radius: 50%;
+    background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
+    box-shadow: 0px 0px 9px rgba(255, 245, 0, 0.60);
+
+    flex-shrink: 0;
 }
 
 .exchange__extraction-img img {
@@ -507,6 +531,10 @@
     color: #fff;
 }
 
+.exchange__extraction-text_wr-dop {
+    position: relative;
+}
+
 .exchange__extraction-text span {
     font-family: 'Arsenal';
     font-size: 1.25vw;
@@ -516,9 +544,41 @@
     color: #FFF500;
 }
 
+span.exchange__extraction-text_color {
+    font-size: 1.04vw;
+    font-style: italic;
+    font-weight: 400;
+}
+
+span.exchange__extraction-text-dop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    font-family: 'Arsenal';
+    font-size: 0.73vw;
+    font-weight: 400;
+
+    color: #fff;
+
+    translate: 0 64%;
+}
+
+span.exchange__extraction-text-dop_color {
+    font-family: 'Arsenal';
+    font-size: 0.73vw;
+    font-weight: 400;
+
+    color: #FFF500;
+}
+
+.exchange__extraction-wr-button {
+    margin-right: -0.7vw;
+}
+
 .exchange__extraction-button-back {
     display: flex;
-    width: 9.38vw;
+    width: 8.55vw;
     height: 2.60vw;
     padding: 0.10vw;
 
@@ -1014,7 +1074,7 @@ h1 {
 
     justify-content: center;
     align-items: center;
-}
+} 
 
 .log-out__button {
     /* position: absolute;    
